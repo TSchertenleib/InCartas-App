@@ -6,53 +6,61 @@
 	<title>InCartas</title>
 	<link rel="stylesheet" charset="utf-8" href="app.css">
 	<script src="app.js" charset="utf-8"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+
 </head>
 
-<body ng-app="InCartas">
+<!-- <body ng-app="InCartas"> -->
 
-	<div class="main" ng-controller="directoryController">
-		<div class="header">
+<body>
+	
+	<img class="abbild" src="images/profil.png">
 
-			<h1>Medikamente</h1>
+	<div class="main">
+
+		<header class="header-profil">
+			<h1>Profil</h1>
 			<input type="text" ng-model="search">
-		</div>		
-			<div class="main" ng-controller="directoryController">
+			<img src="images/profilbild.png">
+		</header>
 
 
-				<ul>
-					<li ng-repeat="item in list | filter:search">
-						{{item.name}} -- {{item.tag}}
-					</li>
-				</ul>
-
-			</div>
+		<!-- 	<div class="main" ng-controller="directoryController"> -->
+		
 
 
-
-
+		<ul>
+			<li ng-repeat="item in list">
+				{{item.name}} -- {{item.tag}}
+			</li>
+		</ul>
 
 
 
-			<footer>
-				<a href="medikamente.html">
-					<img src="images/icons/medikamente_active.png">
-				</a>
-				<a href="profil.html">
-					<img src="images/icons/profil_inactive.png">
-				</a>
-				<a href="scan.html">
-					<img src="images/icons/scan_inactive.png">
-				</a>
-			</footer>
 
 
-		<script type="text/javascript">
-		require('main');
-		</script>
-		<script type="text/javascript">
-		require('directory');
-		</script>
 
-	</body>
-	</html>
+
+
+
+		<footer>
+			<a href="medikamente.html">
+				<img src="images/icons/medikamente_active.png">
+			</a>
+			<a href="profil.html">
+				<img src="images/icons/profil_inactive.png">
+			</a>
+			<a href="scan.html">
+				<img src="images/icons/scan_inactive.png">
+			</a>
+		</footer>
+	</div>
+
+	<script type="text/javascript">
+	require('main');
+	</script>
+	<script type="text/javascript">
+	require('directory');
+	</script>
+
+</body>
+</html>

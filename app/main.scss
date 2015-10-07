@@ -60,13 +60,13 @@ body .abbild {
 	z-index: 300;
 	position: fixed;
 	width: 375px;
-	opacity: 0;
+	opacity: 0.0;
 
 }
 
-// - HEADER -----------------------
+// - HEADER MEDIKAMENTE -----------------------
 
-header {
+.header-medikamente {
 	top: 0;
 	width:100%;
 	z-index:100;
@@ -92,7 +92,36 @@ input {
 	display: none;
 }
 
-// - CONTENT -----------------------
+// - HEADER PROFIL -----------------------
+
+.header-profil {
+	top: 0;
+	width:100%;
+	z-index:100;
+	position:fixed;
+	height: 143px;
+	margin-top: 0;
+	background: $green;
+	h1 {
+		width:100%;
+		font-family: $header-font;
+		font-size: $header-font-size;
+		line-height: 31.41px;
+		margin: 25px 0 1px;
+		color: $header-font-color;
+		text-align: center;
+		font-weight: $font-weight-title;
+		font-size:$header-font-size;
+	}
+	img {
+		width: 170px;
+		margin: 0 0 0 28.33%;
+	}
+}
+
+
+
+// - CONTENT MEDIKAMENTE -----------------------
 
 .main {
 	position: aboslute;
