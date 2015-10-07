@@ -98,7 +98,7 @@ input {
 	position: aboslute;
 	top: 0;
 	background: $medi-background;
-	height: 627px;
+	height: 910px;
 }
 
 
@@ -111,6 +111,11 @@ input {
 		position: absolute;
 		width: 94px;
 		margin: 24px 26px;
+	}
+	.exp-icon {
+		float: left;
+		margin-left: 140px;
+		width: 19px;
 	}
 	.karte {
 		float: left;
@@ -153,13 +158,21 @@ input {
 		.exp-date {
 			margin-left: 165px;
 			font-family: $karten-font-family;
-			font-size: $exp-date-font-size;		
+			font-size: $exp-date-font-size;	
+			line-height: 20px;
+			.datum {
+				margin-left: 20px;
+			}	
 		}
 		.expired {
-			margin-left: 140px;
+			margin-left: 165px;
 			font-size: $exp-date-font-size;
 			font-weigth: $font-weight-expired;
 			color: $red;
+			line-height: 22px;
+		}
+		&:last-child {
+			margin-bottom: 67px;
 		}
 	}
 }
