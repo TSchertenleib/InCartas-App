@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<title>InCartas</title>
+	<link rel="stylesheet" charset="utf-8" href="app.css">
+	<script src="app.js" charset="utf-8"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+</head>
+
+<body ng-app="InCartas">
+
+	<div class="main" ng-controller="directoryController">
+		<div class="header">
+
+			<h1>Medikamente</h1>
+			<input type="text" ng-model="search">
+			<div class="main" ng-controller="directoryController">
+
+
+				<ul>
+					<li ng-repeat="item in list | filter:search">
+						{{item.name}} -- {{item.tag}}
+					</li>
+				</ul>
+
+			</div>
+
+
+
+
+
+
+
+			<footer>
+				<a href="medikamente.html">
+					<img alt="medikamente" src="images/icons/medikamente_active.png">
+				</a>
+
+			</footer>
+		</div>
+
+		<script type="text/javascript">
+		require('main');
+		</script>
+		<script type="text/javascript">
+		require('directory');
+		</script>
+
+	</body>
+	</html>
