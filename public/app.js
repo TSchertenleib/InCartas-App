@@ -9376,12 +9376,18 @@ return jQuery;
   connect();
 })();
 
+require.register("MainController", function(exports, require, module) {
+// app.controller('MainController', ['$scope', function($scope) { 
+// $scope.title = 'Medikamente'; 
+// }]);
+});
+
 require.register("directory", function(exports, require, module) {
-angular.module('InCartas', [])
+var app = angular.module('InCartas', [])
 	.controller('directoryController', function($scope) {
 	$scope.list = [
-			{name:'Thomas', age: 30},
-			{name:'Adélaïde', age: 23}
+			{name:'Aspirin', tag: 'Schmerzen'},
+			{name:'Voltaren', tag: 'Wunderkrankungen'}
 	]
 	});
 });

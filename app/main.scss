@@ -17,46 +17,109 @@
 
 
 
+
+
 // Colors
-$background-color: white;
-$header-background: white;
-$header-font-color: black;
+$profil-background: white;
+$medi-background: #F0F0F0;
+$card-background: white;      
+$green: #3BD28E;
+$header-font-color: white;
 
 // Typografie
-$font-stack: Lato;
-$title-font: Lato;
+$main-font: Lato;
+$header-font: Lato-Light;
 $font-size-text: 16px;
+$header-font-size: 20px;
 
-$font-size-title: 24px;
-$font-weight-title: 100;
 
-// -----------------------
+$font-weight-title: lighter;
+
+// - BODY -----------------------
 
 body	{
 	margin: 0;
 	background: white;
-	font: 100% $font-stack;
+	font: 100% $main-font;
 }
 
-// -----------------------
+body .abbild {
+	width: 375px;
+	display: none;
 
-.header {
+}
+
+// - HEADER -----------------------
+
+header {
+	top: 0;
 	width:100%;
 	z-index:100;
 	position:fixed;
-	height: 64px;
+	height: 72px;
 	margin-top: 0;
-	background: $header-background;
+	background: $green;
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.20);
+	h1 {
+		width:100%;
+		font-family: $header-font;
+		font-size: $header-font-size;
+		line-height: 31.41px;
+		margin: 25px 0;
+		color: $header-font-color;
+		text-align: center;
+		font-weight: $font-weight-title;
+		font-size:$header-font-size;
+	}
 }
 
-h1 {
-	font-family: $title-font;
-	margin: 25px 0;
-	width:100%;
-	color: $header-font-color;
-	text-align: center;
-	font-weight: $font-weight-title;
-	font-size:$font-size-title;
+input {
+	display: none;
 }
+
+// - MAIN -----------------------
+
+.main {
+	background: $medi-background;
+	.karte{
+		width: 100%;
+		height: 117px;
+		margin-top: 5px;
+		background: $card-background;
+		box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
+	}
+	&:first-child {
+		margin-top: 100px;
+	}
+}
+
+
+
+ul {
+	display: none;
+}
+
+// - FOOTER -----------------------
+
+
+
+footer {
+	background: white;
+	width: 100%;
+	z-index:100;
+	position: fixed;
+	top: 572px;
+	height: 54.91px;
+	box-shadow: 0px -2px 3px 0px rgba(0,0,0,0.10);
+	a {
+		img {
+			height: 37px;
+			margin-top: 9px;
+			margin-left: 64.3px;
+		}
+	}
+}
+
+
 
 // -----------------------
