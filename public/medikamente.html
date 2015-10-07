@@ -9,22 +9,45 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 </head>
 
-<body ng-app="InCartas">
+<!-- <body ng-app="InCartas"> -->
 
-
+<body>
+	
 	<img class="abbild" src="images/medikamente.png">
-
-	<header>
-		<h1>Medikamente</h1>
-		<input type="text" ng-model="search">
-	</header>
 
 	<div class="main">
 
-<!-- 	<div class="main" ng-controller="directoryController"> -->
+		<header>
+			<h1>Medikamente</h1>
+			<input type="text" ng-model="search">
+		</header>
 
-		<div class="karte">
 
+		<!-- 	<div class="main" ng-controller="directoryController"> -->
+		<div class="karten">
+			<div class="karte">
+				<div class="tag-gruen"></div>
+			</div>
+
+			<div class="karte">
+				<div class="tag-gruen"></div>
+			</div>
+
+			<div class="karte">
+				<div class="tag-orange"></div>
+			</div>
+
+			<div class="karte">
+				<div class="tag-orange"></div>
+			</div>
+
+			<div class="karte">
+				<div class="tag-red"></div>
+			</div>			
+
+			<div class="karte">
+				<div class="tag-red"></div>
+			</div>
 		</div>
 
 
@@ -34,26 +57,26 @@
 			</li>
 		</ul>
 
+
+
+
+
+
+
+
+
+		<footer>
+			<a href="medikamente.html">
+				<img src="images/icons/medikamente_active.png">
+			</a>
+			<a href="profil.html">
+				<img src="images/icons/profil_inactive.png">
+			</a>
+			<a href="scan.html">
+				<img src="images/icons/scan_inactive.png">
+			</a>
+		</footer>
 	</div>
-
-
-
-
-
-
-
-	<footer>
-		<a href="medikamente.html">
-			<img src="images/icons/medikamente_active.png">
-		</a>
-		<a href="profil.html">
-			<img src="images/icons/profil_inactive.png">
-		</a>
-		<a href="scan.html">
-			<img src="images/icons/scan_inactive.png">
-		</a>
-	</footer>
-
 
 	<script type="text/javascript">
 	require('main');

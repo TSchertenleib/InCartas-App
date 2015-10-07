@@ -23,8 +23,11 @@
 $profil-background: white;
 $medi-background: #F0F0F0;
 $card-background: white;      
-$green: #3BD28E;
 $header-font-color: white;
+
+$green: #3BD28E;
+$orange: #FFA500;
+$red: #FB532D;
 
 // Typografie
 $main-font: Lato;
@@ -39,13 +42,15 @@ $font-weight-title: lighter;
 
 body	{
 	margin: 0;
-	background: white;
 	font: 100% $main-font;
+	background: transparent;
 }
 
 body .abbild {
+	z-index: 300;
+	position: fixed;
 	width: 375px;
-	display: none;
+	opacity: 0;
 
 }
 
@@ -77,19 +82,42 @@ input {
 	display: none;
 }
 
-// - MAIN -----------------------
+// - CONTENT -----------------------
 
 .main {
+	position: aboslute;
+	top: 0;
 	background: $medi-background;
+	height: 627px;
+}
+
+
+// - KARTEN -----------------------
+
+.karten {
+	padding-top: 21.5%;
+	padding-left: 3%;
 	.karte{
-		width: 100%;
+		width: 97%;
 		height: 117px;
-		margin-top: 5px;
+		margin-top: 10px;
 		background: $card-background;
 		box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
-	}
-	&:first-child {
-		margin-top: 100px;
+		.tag-gruen {
+			background: $green;
+			height: 100%;
+			width: 2%;
+		}
+		.tag-orange {
+			background: $orange;
+			height: 100%;
+			width: 2%;
+		}
+		.tag-red {
+			background: $red;
+			height: 100%;
+			width: 2%;
+		}
 	}
 }
 
