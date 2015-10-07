@@ -50,7 +50,7 @@ body .abbild {
 	z-index: 300;
 	position: fixed;
 	width: 375px;
-	opacity: 0;
+	opacity: .1;
 
 }
 
@@ -103,21 +103,27 @@ input {
 		margin-top: 10px;
 		background: $card-background;
 		box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
+		img {
+ 			margin: 0 auto;
+			width: 94px;
+
+		}
 		.tag-gruen {
 			background: $green;
-			height: 100%;
+			height: 117px;
 			width: 2%;
 		}
 		.tag-orange {
 			background: $orange;
-			height: 100%;
+			height: 117px;
 			width: 2%;
 		}
 		.tag-red {
 			background: $red;
-			height: 100%;
+			height: 117px;
 			width: 2%;
 		}
+
 	}
 }
 
