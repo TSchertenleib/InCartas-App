@@ -35,8 +35,18 @@ $header-font: Lato-Light;
 $font-size-text: 16px;
 $header-font-size: 20px;
 
-
 $font-weight-title: lighter;
+
+// Karten
+$karten-titel-size: 18px;
+$karten-tag-size: 18px;
+$exp-date-font-size: 14px; 
+$karten-font-family: Lato-Light;
+$font-weight-expired: 400;
+
+// Effekte
+$box-shadow-cards: 0px 1px 2px 0px rgba(0,0,0,0.20);
+$box-shadow-header:  0px 2px 3px 0px rgba(0,0,0,0.20);
 
 // - BODY -----------------------
 
@@ -50,7 +60,7 @@ body .abbild {
 	z-index: 300;
 	position: fixed;
 	width: 375px;
-	opacity: .1;
+	opacity: 0;
 
 }
 
@@ -64,7 +74,7 @@ header {
 	height: 72px;
 	margin-top: 0;
 	background: $green;
-	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.20);
+	box-shadow: $box-shadow-header;
 	h1 {
 		width:100%;
 		font-family: $header-font;
@@ -95,37 +105,65 @@ input {
 // - KARTEN -----------------------
 
 .karten {
-	padding-top: 21.5%;
+	padding-top: 20.8%;
 	padding-left: 3%;
-	img {
+	.medi {
 		position: absolute;
 		width: 94px;
-		margin: 10px 0 0 10px;
+		margin: 24px 26px;
 	}
-	.karte{
+	.karte {
+		float: left;
+		position: relative;
+		margin-top: 11px;
 		width: 97%;
 		height: 117px;
-		margin-top: 10px;
 		background: $card-background;
-		box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
+		box-shadow: $box-shadow-cards;
 		.tag-gruen {
+			position: absolute;
 			background: $green;
-			height: 100%;
+			height: 117px;
 			width: 2%;
 		}
 		.tag-orange {
+			position: absolute;
 			background: $orange;
-			height: 100%;
+			height: 117px;
 			width: 2%;
 		}
 		.tag-red {
+			position: absolute;
 			background: $red;
-			height: 100%;
+			height: 117px;
 			width: 2%;
 		}
-
+		.name {
+			margin-left: 140px;
+			padding-top: 3px;
+			margin-bottom: 0;
+			font-size: $karten-titel-size;
+		}
+		.tag {
+			margin-left: 140px;
+			margin-top: 2px;
+			font-size: $karten-tag-size;
+			font-family: $karten-font-family;
+		}
+		.exp-date {
+			margin-left: 165px;
+			font-family: $karten-font-family;
+			font-size: $exp-date-font-size;		
+		}
+		.expired {
+			margin-left: 140px;
+			font-size: $exp-date-font-size;
+			font-weigth: $font-weight-expired;
+			color: $red;
+		}
 	}
 }
+
 
 
 
@@ -146,6 +184,7 @@ footer {
 	height: 54.91px;
 	box-shadow: 0px -2px 3px 0px rgba(0,0,0,0.10);
 	a {
+		text-decoration: none;
 		img {
 			height: 37px;
 			margin-top: 9px;
