@@ -48208,10 +48208,10 @@ var app = angular.module('InCartasApp', ['ngTouch', 'ngAnimate', 'ngRoute']);
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
     .when('/', { 
-      templateUrl: 'views/medikamente.html'
+      templateUrl: 'views/profil.html'
     })
     .when('/:id', {
-      templateUrl: 'views/profil.html'
+      templateUrl: 'views/medikamente.html'
     });
 }]);
 
@@ -48226,6 +48226,90 @@ app.config(['$routeProvider', function($routeProvider) {
 require('controllers/medikamente')(app);
 require('controllers/profil')(app);
 
+
+
+
+
+});
+
+require.register("controllers/karten", function(exports, require, module) {
+module.exports = function(app){
+  app.controller('kartenController', ['$scope', function($scope) { 
+    $scope.products = [
+    { 
+      name: 'ASPIRIN', 
+      tag: 'Schmerzen / Fieber', 
+      datum: '22.07.2017',
+    }, 
+    { 
+      name: 'Paracetamol', 
+      tag: 'Schmerzen / Fieber', 
+      datum: '13.04.2016',
+    }, 
+    { 
+      name: 'Olynth', 
+      tag: 'Erkältung', 
+      datum: '22.10.2015',
+    }, 
+    { 
+      name: 'Bepanthen', 
+      tag: 'Wunderkrankungen', 
+      datum: '27.11.2015',
+    }, 
+    { 
+      name: 'Voltaren', 
+      tag: 'Schmerzen', 
+      expired: 'Produkt ist abgelaufen!',
+    }, 
+    { 
+      name: 'Bepanthen', 
+      tag: 'Wunderkrankungen', 
+      expired: 'Produkt ist abgelaufen!',
+    }
+    ];
+  }]);
+};
+});
+
+require.register("controllers/kartenController", function(exports, require, module) {
+module.exports = function(app){
+  app.controller('kartenController', ['$scope', function($scope) { 
+    $scope.products = [
+    { 
+      name: 'The Book of Trees', 
+      price: 19, 
+      pubdate: new Date('2014', '03', '08'), 
+      cover: 'img/the-book-of-trees.jpg',
+      likes: 0,
+      dislikes: 0
+    }, 
+    { 
+      name: 'Program or be Programmed', 
+      price: 8, 
+      pubdate: new Date('2013', '08', '01'), 
+      cover: 'img/program-or-be-programmed.jpg',
+      likes: 0,
+      dislikes: 0 
+    }, 
+    { 
+      name: 'Harry Potter & The Prisoner of Azkaban', 
+      price: 11.99, 
+      pubdate: new Date('1999', '07', '08'), 
+      cover: 'http://upload.wikimedia.org/wikipedia/en/b/b4/Harry_Potter_and_the_Prisoner_of_Azkaban_(US_cover).jpg',
+      likes: 0,
+      dislikes: 0 
+    }, 
+    { 
+      name: 'Ready Player One', 
+      price: 7.99, 
+      pubdate: new Date('2011', '08', '16'), 
+      cover: 'http://upload.wikimedia.org/wikipedia/en/a/a4/Ready_Player_One_cover.jpg',
+      likes: 0,
+      dislikes: 0 
+    }
+    ];
+  }]);
+};
 });
 
 require.register("controllers/medikamente", function(exports, require, module) {
@@ -48275,6 +48359,7 @@ module.exports = function(app){
     }
   }]);
 };
+
 
 });
 

@@ -5,10 +5,10 @@ var app = angular.module('InCartasApp', ['ngTouch', 'ngAnimate', 'ngRoute']);
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
     .when('/', { 
-      templateUrl: 'views/medikamente.html'
+      templateUrl: 'views/profil.html'
     })
     .when('/:id', {
-      templateUrl: 'views/profil.html'
+      templateUrl: 'views/medikamente.html'
     });
 }]);
 
@@ -22,3 +22,7 @@ app.config(['$routeProvider', function($routeProvider) {
 // load controllers
 require('controllers/medikamente')(app);
 require('controllers/profil')(app);
+
+
+
+
