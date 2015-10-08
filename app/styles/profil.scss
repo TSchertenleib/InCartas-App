@@ -1,0 +1,83 @@
+@import 'config';
+
+
+// - HEADER PROFIL -----------------------
+
+.header-profil {
+  top: 0;
+  width:100%;
+  z-index:100;
+  position:fixed;
+  height: 143px;
+  margin-top: 0;
+  background: $green;
+  h1 {
+    width:100%;
+    font-family: $header-font;
+    font-size: $header-font-size;
+    line-height: 31.41px;
+    margin: 25px 0 0px;
+    color: $header-font-color;
+    text-align: center;
+    font-weight: $font-weight-title;
+    font-size:$header-font-size;
+  }
+  img {
+    width: 150px;
+    margin: 0 0 0 29.9%;
+  }
+}
+
+// - CONTENT PROFIL -----------------------
+
+.profil-main {
+  position: aboslute;
+  top: 0;
+  background: $profil-background;
+  letter-spacing: 1px;
+}
+
+
+// - PROFIL LISTE -----------------------
+
+.liste {
+  margin: 0;
+  padding: 31.6% 8.5% 0px 8.5%;
+  width: 100%;
+  height: 100%;
+  li {
+    position: relative; 
+    list-style: none;
+    height: auto;
+    padding: 26.5px 0 10px 0;
+    border-bottom: 1px solid lightgrey;
+    height: 73px;
+    span {
+      color: $font-color-small-title;
+      font-size: $font-size-small;
+      font-family: $font-family-small;
+      letter-spacing: 1.6px;
+    }
+    .angabe {
+      float: left;
+    }
+    .eingabe {
+      float: right;
+    }
+    .next {
+      font-family: Lato-Light;
+      float: right; 
+      margin-left: 0.5em;
+      font-size: 29px;  
+      line-height: 12px;  
+    }
+    &:first-child{
+      margin-top: 110px;
+      border-top: 1px solid lightgrey;
+    }
+    &:last-child{
+      margin-bottom: 110px;
+    }
+  }
+}
+
