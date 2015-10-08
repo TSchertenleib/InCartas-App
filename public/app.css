@@ -25,7 +25,7 @@ body {
 body .abbild {
   z-index: 300;
   position: fixed;
-  width: 375px;
+  width: 100%;
   opacity: 0.4; }
 
 /* line 69, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
