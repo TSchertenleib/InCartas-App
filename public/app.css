@@ -210,13 +210,13 @@ input {
       margin-bottom: 67px; }
 
 /* line 280, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-.list {
+.liste {
   margin: 0;
   padding: 31.6% 8.5% 0px 8.5%;
   width: 100%;
   height: 100%; }
   /* line 285, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-  .list li {
+  .liste li {
     position: relative;
     list-style: none;
     height: auto;
@@ -224,30 +224,30 @@ input {
     border-bottom: 1px solid lightgrey;
     height: 73px; }
     /* line 292, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .list li span {
+    .liste li span {
       color: #757575;
       font-size: 14px;
       font-family: Lato-Light;
       letter-spacing: 1.6px; }
     /* line 298, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .list li .angabe {
+    .liste li .angabe {
       float: left; }
     /* line 301, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .list li .eingabe {
+    .liste li .eingabe {
       float: right; }
     /* line 304, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .list li .next {
+    .liste li .next {
       font-family: Lato-Light;
       float: right;
       margin-left: 0.5em;
       font-size: 29px;
       line-height: 12px; }
     /* line 311, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .list li:first-child {
+    .liste li:first-child {
       margin-top: 110px;
       border-top: 1px solid lightgrey; }
     /* line 315, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .list li:last-child {
+    .liste li:last-child {
       margin-bottom: 110px; }
 
 /* line 326, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
@@ -285,6 +285,116 @@ footer {
       height: 37px;
       margin-top: 9px;
       margin-left: 64.3px; }
+
+
+/* line 4, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/edit.scss */
+.edit .field {
+  background-color: #E4DD5C;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  font-size: 18px;
+  border: 0;
+  text-decoration: underline;
+  min-height: 200px; }
+
+/* line 15, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/edit.scss */
+.edit .save {
+  background-color: #e45c7a;
+  padding: 20px; }
+
+/* line 3, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
+.list {
+  /* Animations */ }
+  /* line 5, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
+  .list .items .item {
+    background-color: #E4DD5C;
+    padding: 20px; }
+    /* line 9, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
+    .list .items .item:nth-child(odd) {
+      background-color: #ddd430; }
+    /* line 12, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
+    .list .items .item.add {
+      background-color: #e45c7a; }
+    /* line 15, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
+    .list .items .item.finished {
+      background-color: gray; }
+      /* line 17, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
+      .list .items .item.finished .name {
+        text-decoration: line-through; }
+      /* line 20, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
+      .list .items .item.finished:nth-child(odd) {
+        background-color: #666666; }
+  /* line 25, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
+  .list .items .tick {
+    display: inline-block; }
+  /* line 28, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
+  .list .items .name {
+    display: inline-block;
+    font-size: 18px; }
+  /* line 37, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
+  .list .item {
+    transition: background-color 0.3s; }
+  /* line 42, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
+  .list .item {
+    animation: fade-in 0.7s ease 1; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -300%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+  /* line 57, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
+  .list .item.ng-leave {
+    animation: fade-out 0.7s ease 1; }
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: none; }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -300%, 0); } }
+
+/* line 3, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+body {
+  background-color: #aaa;
+  font-family: Roboto, sans-serif;
+  margin: 0; }
+
+/* line 9, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+.toolbar {
+  position: relative;
+  z-index: 999;
+  background-color: #333;
+  padding: 20px 20px;
+  padding-top: 40px;
+  text-align: center; }
+  /* line 16, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+  .toolbar .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: white; }
+
+/* Animation */
+/* line 26, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+.slide {
+  position: absolute;
+  width: 100%;
+  transition: transform 0.7s ease-in-out;
+  transform: translateX(0); }
+  /* line 31, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+  .slide.ng-enter {
+    transform: translateX(100%); }
+  /* line 34, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+  .slide.ng-enter.ng-enter-active, .slide.ng-leave {
+    transform: translateX(0); }
+  /* line 37, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+  .slide.ng-leave.ng-leave-active {
+    transform: translateX(-100%); }
 
 
 /*# sourceMappingURL=app.css.map*/

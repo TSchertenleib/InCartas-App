@@ -1,0 +1,19 @@
+@import 'config';
+
+.edit {
+  .field {
+    background-color: $color;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    font-size: 18px;
+    border: 0;
+    text-decoration: underline;
+    min-height: 200px;
+  }
+  .save {
+    background-color: $color2;
+    padding: 20px;
+  }
+}
