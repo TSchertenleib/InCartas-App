@@ -29,13 +29,18 @@ $green: #3BD28E;
 $orange: #FFA500;
 $red: #FB532D;
 
+$font-color-small-title: #757575;
+
 // Typografie
 $main-font: Lato;
 $header-font: Lato-Light;
+$font-family-small: Lato-Light;
 $font-size-text: 16px;
 $header-font-size: 20px;
 
 $font-weight-title: lighter;
+$font-weight-small: lighter;
+
 
 // Karten
 $karten-titel-size: 18px;
@@ -117,8 +122,8 @@ input {
 		font-size:$header-font-size;
 	}
 	img {
-		width: 170px;
-		margin: 0 0 0 27.33%;
+		width: 150px;
+		margin: 0 0 0 29.9%;
 	}
 }
 
@@ -131,6 +136,7 @@ input {
 	top: 0;
 	background: $medi-background;
 	height: 910px;
+	letter-spacing: 1px;
 }
 
 // - CONTENT PROFIL -----------------------
@@ -139,6 +145,7 @@ input {
 	position: aboslute;
 	top: 0;
 	background: $profil-background;
+	letter-spacing: 1px;
 }
 
 // - KARTEN -----------------------
@@ -217,7 +224,7 @@ input {
 }
 
 
-
+// ‹ ›
 
 // ul {
 // 	display: none;
@@ -227,29 +234,45 @@ input {
 
 .list {
 	margin: 0;
-	color: red;
-	font-size: $font-size-text;
-	padding: 85px 0 20px 0;
+	padding: 31.6% 8.5% 0px 8.5%;
 	width: 100%;
-	height: 500px;
+	height: 100%;
 	li {
 		position: relative; 
 		list-style: none;
 		height: auto;
-		padding: 16px 40px 10px 10px;
-		border-bottom: 2px solid white;
-		cursor: pointer;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		height: 50px;
+		padding: 26.5px 0 10px 0;
+		border-bottom: 1px solid lightgrey;
+		height: 73px;
+		span {
+			color: $font-color-small-title;
+			font-size: $font-size-small;
+			font-family: $font-family-small;
+			letter-spacing: 1.6px;
+		}
 		.angabe {
-			color: black;
+			float: left;
+		}
+		.eingabe {
+			float: right;
+		}
+		.next {
+			font-family: Lato-Light;
+			float: right;	
+			margin-left: 0.5em;
+			font-size: 29px;	
+			line-height: 12px;	
+		}
+		&:first-child{
+			margin-top: 110px;
+			border-top: 1px solid lightgrey;
 		}
 		&:last-child{
-			padding-bottom: 110px;
+			margin-bottom: 110px;
 		}
 	}
 }
+
 
 // - FOOTER -----------------------
 
@@ -258,9 +281,9 @@ input {
 footer {
 	background: white;
 	z-index:100;
-    position:absolute;
-    bottom:0;
-    width:100%;
+	position:fixed;
+	bottom:0;
+	width:100%;
 	height: 54.91px;
 	box-shadow: 0px -2px 3px 0px rgba(0,0,0,0.10);
 	a {
