@@ -1,25 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-	<title>InCartas</title>
-	<link rel="stylesheet" charset="utf-8" href="app.css">
-	<script src="app.js" charset="utf-8"></script>
+<div class="list" ng-controller="medikamenteController">
+  <div class="items">
+    <div class="item repeated-item" ng-repeat="item in items" ng-class="{finished: item.finished}" ng-swipe-right="right(item)" ng-swipe-left="left(item)" ng-click="edit(item)">
+      <div class="name">{{item.name}}</div>
+    </div>
 
-</head>
-
-<!-- <body ng-app="InCartas"> -->
-
-<body>
+    <div class="add item" ng-click="add()">
+      <div class="name">NEW ITEM</div>
+    </div>
+  </div>
+</div>
 	
-	<div class="medikamente-main">
-
-		<header class="header-medikamente">
-			<h1>Medikamente</h1>
-			<input type="text" ng-model="search">
-		</header>
-
 
 		<!-- 	<div class="main" ng-controller="directoryController"> -->
 		<div class="karten">
@@ -86,32 +76,3 @@
 		</ul>
 
 
-
-
-
-
-
-
-
-		<footer>
-			<a href="medikamente.html">
-				<img src="images/icons/medikamente_active.png">
-			</a>
-			<a href="profil.html">
-				<img src="images/icons/profil_inactive.png">
-			</a>
-			<a href="scan.html">
-				<img src="images/icons/scan_inactive.png">
-			</a>
-		</footer>
-	</div>
-
-	<script type="text/javascript">
-	require('main');
-	</script>
-	<script type="text/javascript">
-	require('directory');
-	</script>
-
-</body>
-</html>
