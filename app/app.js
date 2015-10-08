@@ -4,7 +4,7 @@ var app = angular.module('InCartasApp', ['ngTouch', 'ngAnimate', 'ngRoute']);
 // setup router
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
-    .when('/', {
+    .when('/', { 
       templateUrl: 'views/medikamente.html'
     })
     .when('/:id', {

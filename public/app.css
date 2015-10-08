@@ -1,4 +1,4 @@
-/* line 1, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
+/* line 1, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_config.scss */
 * {
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -6,80 +6,16 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 9, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
+/* line 9, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_config.scss */
 ::-moz-selection {
   /* Code for Firefox */
   background: transparent; }
 
-/* line 13, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
+/* line 13, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_config.scss */
 ::selection {
   background: transparent; }
 
-/* line 61, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-body {
-  margin: 0;
-  font: 100% Lato;
-  background: transparent; }
-
-/* line 67, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-body .abbild {
-  z-index: 300;
-  position: fixed;
-  width: 100%;
-  opacity: 0; }
-
-/* line 77, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-.header-medikamente {
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  position: fixed;
-  height: 72px;
-  margin-top: 0;
-  background: #3BD28E;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2); }
-  /* line 86, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-  .header-medikamente h1 {
-    width: 100%;
-    font-family: Lato-Light;
-    font-size: 20px;
-    line-height: 31.41px;
-    margin: 25px 0;
-    color: white;
-    text-align: center;
-    font-weight: lighter;
-    font-size: 20px; }
-
-/* line 99, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-input {
-  display: none; }
-
-/* line 105, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-.header-profil {
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  position: fixed;
-  height: 143px;
-  margin-top: 0;
-  background: #3BD28E; }
-  /* line 113, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-  .header-profil h1 {
-    width: 100%;
-    font-family: Lato-Light;
-    font-size: 20px;
-    line-height: 31.41px;
-    margin: 25px 0 0px;
-    color: white;
-    text-align: center;
-    font-weight: lighter;
-    font-size: 20px; }
-  /* line 124, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-  .header-profil img {
-    width: 150px;
-    margin: 0 0 0 29.9%; }
-
-/* line 132, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
+/* line 3, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_scan.scss */
 .header-scan {
   top: 0;
   width: 100%;
@@ -89,7 +25,7 @@ input {
   margin-top: 0;
   background: #3BD28E;
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2); }
-  /* line 141, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
+  /* line 12, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_scan.scss */
   .header-scan h1 {
     width: 100%;
     font-family: Lato-Light;
@@ -101,22 +37,7 @@ input {
     font-weight: lighter;
     font-size: 20px; }
 
-/* line 157, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-.medikamente-main {
-  position: aboslute;
-  top: 0;
-  background: #F0F0F0;
-  height: 910px;
-  letter-spacing: 1px; }
-
-/* line 167, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-.profil-main {
-  position: aboslute;
-  top: 0;
-  background: white;
-  letter-spacing: 1px; }
-
-/* line 176, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
+/* line 28, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_scan.scss */
 #video-bg {
   position: fixed;
   right: 0px;
@@ -129,146 +50,14 @@ input {
   background: transparent url(video/aspirin.jpg) no-repeat;
   background-size: cover; }
 
-/* line 189, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
+/* line 41, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_scan.scss */
 .camera-guide {
   position: fixed;
   margin: 40% 20%;
   width: 227.01px;
   z-index: 10; }
 
-/* line 198, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-.karten {
-  padding-top: 20.8%;
-  padding-left: 3%; }
-  /* line 201, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-  .karten .medi {
-    position: absolute;
-    width: 94px;
-    margin: 24px 26px; }
-  /* line 206, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-  .karten .exp-icon {
-    float: left;
-    margin-left: 140px;
-    width: 19px; }
-  /* line 211, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-  .karten .karte {
-    float: left;
-    position: relative;
-    margin-top: 11px;
-    width: 97%;
-    height: 117px;
-    background: white;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }
-    /* line 219, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .karten .karte .tag-gruen {
-      position: absolute;
-      background: #3BD28E;
-      height: 117px;
-      width: 2%; }
-    /* line 225, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .karten .karte .tag-orange {
-      position: absolute;
-      background: #FFA500;
-      height: 117px;
-      width: 2%; }
-    /* line 231, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .karten .karte .tag-red {
-      position: absolute;
-      background: #FB532D;
-      height: 117px;
-      width: 2%; }
-    /* line 237, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .karten .karte .name {
-      margin-left: 140px;
-      padding-top: 3px;
-      margin-bottom: 0;
-      font-size: 18px; }
-    /* line 243, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .karten .karte .tag {
-      margin-left: 140px;
-      margin-top: 2px;
-      font-size: 18px;
-      font-family: Lato-Light; }
-    /* line 249, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .karten .karte .exp-date {
-      margin-left: 165px;
-      font-family: Lato-Light;
-      font-size: 14px;
-      line-height: 20px; }
-      /* line 254, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-      .karten .karte .exp-date .datum {
-        margin-left: 20px; }
-    /* line 258, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .karten .karte .expired {
-      margin-left: 165px;
-      font-size: 14px;
-      font-weigth: 400;
-      color: #FB532D;
-      line-height: 22px; }
-    /* line 265, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .karten .karte:last-child {
-      margin-bottom: 67px; }
-
-/* line 280, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-.liste {
-  margin: 0;
-  padding: 31.6% 8.5% 0px 8.5%;
-  width: 100%;
-  height: 100%; }
-  /* line 285, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-  .liste li {
-    position: relative;
-    list-style: none;
-    height: auto;
-    padding: 26.5px 0 10px 0;
-    border-bottom: 1px solid lightgrey;
-    height: 73px; }
-    /* line 292, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .liste li span {
-      color: #757575;
-      font-size: 14px;
-      font-family: Lato-Light;
-      letter-spacing: 1.6px; }
-    /* line 298, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .liste li .angabe {
-      float: left; }
-    /* line 301, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .liste li .eingabe {
-      float: right; }
-    /* line 304, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .liste li .next {
-      font-family: Lato-Light;
-      float: right;
-      margin-left: 0.5em;
-      font-size: 29px;
-      line-height: 12px; }
-    /* line 311, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .liste li:first-child {
-      margin-top: 110px;
-      border-top: 1px solid lightgrey; }
-    /* line 315, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    .liste li:last-child {
-      margin-bottom: 110px; }
-
-/* line 326, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-footer {
-  background: white;
-  z-index: 100;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 54.91px;
-  box-shadow: 0px -2px 3px 0px rgba(0, 0, 0, 0.1); }
-  /* line 334, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-  footer a {
-    text-decoration: none; }
-    /* line 336, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
-    footer a img {
-      height: 37px;
-      margin-top: 9px;
-      margin-left: 64.3px; }
-
-/* line 352, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
+/* line 52, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_scan.scss */
 .footer-scan {
   z-index: 100;
   position: fixed;
@@ -277,180 +66,269 @@ footer {
   height: 54.91px;
   background: rgba(89, 89, 89, 0.76);
   box-shadow: 0px -2px 3px 0px rgba(0, 0, 0, 0.1); }
-  /* line 360, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
+  /* line 60, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_scan.scss */
   .footer-scan a {
     text-decoration: none; }
-    /* line 362, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/main.scss */
+    /* line 62, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_scan.scss */
     .footer-scan a img {
       height: 37px;
       margin-top: 9px;
       margin-left: 64.3px; }
 
+/* line 1, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_config.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-/* line 4, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/edit.scss */
-.edit .field {
-  background-color: #E4DD5C;
-  display: block;
+/* line 9, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_config.scss */
+::-moz-selection {
+  /* Code for Firefox */
+  background: transparent; }
+
+/* line 13, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_config.scss */
+::selection {
+  background: transparent; }
+
+/* line 6, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_profil.scss */
+.header-profil {
+  top: 0;
   width: 100%;
+  z-index: 100;
+  position: fixed;
+  height: 143px;
+  margin-top: 0;
+  background: #3BD28E; }
+  /* line 14, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_profil.scss */
+  .header-profil h1 {
+    width: 100%;
+    font-family: Lato-Light;
+    font-size: 20px;
+    line-height: 31.41px;
+    margin: 25px 0 0px;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px; }
+  /* line 25, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_profil.scss */
+  .header-profil img {
+    width: 150px;
+    margin: 0 0 0 29.9%; }
+
+/* line 33, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_profil.scss */
+.profil-main {
+  position: aboslute;
+  top: 0;
+  background: white;
+  letter-spacing: 1px; }
+
+/* line 43, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_profil.scss */
+.liste {
   margin: 0;
-  padding: 20px;
-  font-size: 18px;
-  border: 0;
-  text-decoration: underline;
-  min-height: 200px; }
+  padding: 31.6% 8.5% 0px 8.5%;
+  width: 100%;
+  height: 100%; }
+  /* line 48, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_profil.scss */
+  .liste li {
+    position: relative;
+    list-style: none;
+    height: auto;
+    padding: 26.5px 0 10px 0;
+    border-bottom: 1px solid lightgrey;
+    height: 73px; }
+    /* line 55, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_profil.scss */
+    .liste li span {
+      color: #757575;
+      font-size: 14px;
+      font-family: Lato-Light;
+      letter-spacing: 1.6px; }
+    /* line 61, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_profil.scss */
+    .liste li .angabe {
+      float: left; }
+    /* line 64, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_profil.scss */
+    .liste li .eingabe {
+      float: right; }
+    /* line 67, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_profil.scss */
+    .liste li .next {
+      font-family: Lato-Light;
+      float: right;
+      margin-left: 0.5em;
+      font-size: 29px;
+      line-height: 12px; }
+    /* line 74, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_profil.scss */
+    .liste li:first-child {
+      margin-top: 110px;
+      border-top: 1px solid lightgrey; }
+    /* line 78, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_profil.scss */
+    .liste li:last-child {
+      margin-bottom: 110px; }
 
-/* line 15, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/edit.scss */
-.edit .save {
-  background-color: #e45c7a;
-  padding: 20px; }
+/* line 1, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_config.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-/* line 3, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
-.list {
-  /* Animations */ }
-  /* line 5, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
-  .list .items .item {
-    background-color: #E4DD5C;
-    padding: 20px; }
-    /* line 9, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
-    .list .items .item:nth-child(odd) {
-      background-color: #ddd430; }
-    /* line 12, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
-    .list .items .item.add {
-      background-color: #e45c7a; }
-    /* line 15, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
-    .list .items .item.finished {
-      background-color: gray; }
-      /* line 17, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
-      .list .items .item.finished .name {
-        text-decoration: line-through; }
-      /* line 20, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
-      .list .items .item.finished:nth-child(odd) {
-        background-color: #666666; }
-  /* line 25, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
-  .list .items .tick {
-    display: inline-block; }
-  /* line 28, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
-  .list .items .name {
-    display: inline-block;
-    font-size: 18px; }
-  /* line 37, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
-  .list .item {
-    transition: background-color 0.3s; }
-  /* line 42, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
-  .list .item {
-    animation: fade-in 0.7s ease 1; }
+/* line 9, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_config.scss */
+::-moz-selection {
+  /* Code for Firefox */
+  background: transparent; }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -300%, 0); }
-  to {
-    opacity: 1;
-    transform: none; } }
-  /* line 57, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/list.scss */
-  .list .item.ng-leave {
-    animation: fade-out 0.7s ease 1; }
+/* line 13, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_config.scss */
+::selection {
+  background: transparent; }
 
-@keyframes fade-out {
-  from {
-    opacity: 1;
-    transform: none; }
-  to {
-    opacity: 0;
-    transform: translate3d(0, -300%, 0); } }
+/* line 5, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+.header-medikamente {
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  height: 72px;
+  margin-top: 0;
+  background: #3BD28E;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2); }
+  /* line 14, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+  .header-medikamente h1 {
+    width: 100%;
+    font-family: Lato-Light;
+    font-size: 20px;
+    line-height: 31.41px;
+    margin: 25px 0;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px; }
 
-/* line 3, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-body {
-  background-color: #aaa;
-  font-family: Roboto, sans-serif;
-  margin: 0; }
+/* line 27, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+input {
+  display: none; }
+
+/* line 33, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+.medikamente-main {
+  position: aboslute;
+  top: 0;
+  background: #F0F0F0;
+  height: 910px;
+  letter-spacing: 1px; }
+
+/* line 43, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+.karten {
+  padding-top: 20.8%;
+  padding-left: 3%; }
+  /* line 46, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+  .karten .medi {
+    position: absolute;
+    width: 94px;
+    margin: 24px 26px; }
+  /* line 51, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+  .karten .exp-icon {
+    float: left;
+    margin-left: 140px;
+    width: 19px; }
+  /* line 56, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+  .karten .karte {
+    float: left;
+    position: relative;
+    margin-top: 11px;
+    width: 97%;
+    height: 117px;
+    background: white;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }
+    /* line 64, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    .karten .karte .tag-gruen {
+      position: absolute;
+      background: #3BD28E;
+      height: 117px;
+      width: 2%; }
+    /* line 70, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    .karten .karte .tag-orange {
+      position: absolute;
+      background: #FFA500;
+      height: 117px;
+      width: 2%; }
+    /* line 76, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    .karten .karte .tag-red {
+      position: absolute;
+      background: #FB532D;
+      height: 117px;
+      width: 2%; }
+    /* line 82, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    .karten .karte .name {
+      margin-left: 140px;
+      padding-top: 3px;
+      margin-bottom: 0;
+      font-size: 18px; }
+    /* line 88, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    .karten .karte .tag {
+      margin-left: 140px;
+      margin-top: 2px;
+      font-size: 18px;
+      font-family: Lato-Light; }
+    /* line 94, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    .karten .karte .exp-date {
+      margin-left: 165px;
+      font-family: Lato-Light;
+      font-size: 14px;
+      line-height: 20px; }
+      /* line 99, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+      .karten .karte .exp-date .datum {
+        margin-left: 20px; }
+    /* line 103, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    .karten .karte .expired {
+      margin-left: 165px;
+      font-size: 14px;
+      font-weigth: 400;
+      color: #FB532D;
+      line-height: 22px; }
+    /* line 110, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    .karten .karte:last-child {
+      margin-bottom: 67px; }
+
+/* line 1, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_config.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 9, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_config.scss */
+::-moz-selection {
+  /* Code for Firefox */
+  background: transparent; }
+
+/* line 13, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_config.scss */
+::selection {
+  background: transparent; }
+
+/* line 6, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_footer.scss */
+footer {
+  background: white;
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 54.91px;
+  box-shadow: 0px -2px 3px 0px rgba(0, 0, 0, 0.1); }
+  /* line 14, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_footer.scss */
+  footer a {
+    text-decoration: none; }
+    /* line 16, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_footer.scss */
+    footer a img {
+      height: 37px;
+      margin-top: 9px;
+      margin-left: 64.3px; }
 
 /* line 9, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-.toolbar {
-  position: relative;
-  z-index: 999;
-  background-color: #333;
-  padding: 20px 20px;
-  padding-top: 40px;
-  text-align: center; }
-  /* line 16, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-  .toolbar .title {
-    font-size: 18px;
-    font-weight: bold;
-    color: white; }
-
-/* Animation */
-/* line 26, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-.slide {
-  position: absolute;
-  width: 100%;
-  transition: transform 0.7s ease-in-out;
-  transform: translateX(0); }
-  /* line 31, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-  .slide.ng-enter {
-    transform: translateX(100%); }
-  /* line 34, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-  .slide.ng-enter.ng-enter-active, .slide.ng-leave {
-    transform: translateX(0); }
-  /* line 37, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-  .slide.ng-leave.ng-leave-active {
-    transform: translateX(-100%); }
-
-/* line 3, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
-.list {
-  /* Animations */ }
-  /* line 5, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
-  .list .items .item {
-    background-color: #E4DD5C;
-    padding: 20px; }
-    /* line 9, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
-    .list .items .item:nth-child(odd) {
-      background-color: #ddd430; }
-    /* line 12, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
-    .list .items .item.add {
-      background-color: #e45c7a; }
-    /* line 15, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
-    .list .items .item.finished {
-      background-color: gray; }
-      /* line 17, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
-      .list .items .item.finished .name {
-        text-decoration: line-through; }
-      /* line 20, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
-      .list .items .item.finished:nth-child(odd) {
-        background-color: #666666; }
-  /* line 25, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
-  .list .items .tick {
-    display: inline-block; }
-  /* line 28, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
-  .list .items .name {
-    display: inline-block;
-    font-size: 18px; }
-  /* line 37, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
-  .list .item {
-    transition: background-color 0.3s; }
-  /* line 42, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
-  .list .item {
-    animation: fade-in 0.7s ease 1; }
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -300%, 0); }
-  to {
-    opacity: 1;
-    transform: none; } }
-  /* line 57, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
-  .list .item.ng-leave {
-    animation: fade-out 0.7s ease 1; }
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-    transform: none; }
-  to {
-    opacity: 0;
-    transform: translate3d(0, -300%, 0); } }
-
+body {
+  margin: 0;
+  font: 100% Lato;
+  background: transparent; }
 
 
 /*# sourceMappingURL=app.css.map*/
