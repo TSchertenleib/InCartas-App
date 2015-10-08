@@ -1,40 +1,10 @@
 @import 'config';
 
-body {
-  background-color: #aaa;
-  font-family: Roboto, sans-serif;
-  margin: 0;
+// - BODY -----------------------
+
+body	{
+	margin: 0;
+	font: 100% $main-font;
+	background: transparent;
 }
 
-.toolbar {
-  position: relative;
-  z-index: 999;
-  background-color: $grey;
-  padding: 20px 20px;
-  padding-top: 40px;
-  text-align: center;
-  .title {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-  }
-}
-
-/* Animation */
-
-// view animations
-.slide {
-  position: absolute;
-  width: 100%;
-  transition: transform .7s ease-in-out;
-  transform: translateX(0);
-  &.ng-enter {
-    transform: translateX(100%);
-  }
-  &.ng-enter.ng-enter-active, &.ng-leave {
-    transform: translateX(0);
-  }
-  &.ng-leave.ng-leave-active {
-    transform: translateX(-100%);
-  }
-}

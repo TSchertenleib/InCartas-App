@@ -1,0 +1,114 @@
+@import 'config';
+
+// - HEADER MEDIKAMENTE -----------------------
+
+.header-medikamente {
+  top: 0;
+  width:100%;
+  z-index:100;
+  position:fixed;
+  height: 72px;
+  margin-top: 0;
+  background: $green;
+  box-shadow: $box-shadow-header;
+  h1 {
+    width:100%;
+    font-family: $header-font;
+    font-size: $header-font-size;
+    line-height: 31.41px;
+    margin: 25px 0;
+    color: $header-font-color;
+    text-align: center;
+    font-weight: $font-weight-title;
+    font-size:$header-font-size;
+  }
+}
+
+input {
+  display: none;
+}
+
+// - CONTENT MEDIKAMENTE -----------------------
+
+.medikamente-main {
+  position: aboslute;
+  top: 0;
+  background: $medi-background;
+  height: 910px;
+  letter-spacing: 1px;
+}
+
+// - KARTEN -----------------------
+
+.karten {
+  padding-top: 20.8%;
+  padding-left: 3%;
+  .medi {
+    position: absolute;
+    width: 94px;
+    margin: 24px 26px;
+  }
+  .exp-icon {
+    float: left;
+    margin-left: 140px;
+    width: 19px;
+  }
+  .karte {
+    float: left;
+    position: relative;
+    margin-top: 11px;
+    width: 97%;
+    height: 117px;
+    background: $card-background;
+    box-shadow: $box-shadow-cards;
+    .tag-gruen {
+      position: absolute;
+      background: $green;
+      height: 117px;
+      width: 2%;
+    }
+    .tag-orange {
+      position: absolute;
+      background: $orange;
+      height: 117px;
+      width: 2%;
+    }
+    .tag-red {
+      position: absolute;
+      background: $red;
+      height: 117px;
+      width: 2%;
+    }
+    .name {
+      margin-left: 140px;
+      padding-top: 3px;
+      margin-bottom: 0;
+      font-size: $karten-titel-size;
+    }
+    .tag {
+      margin-left: 140px;
+      margin-top: 2px;
+      font-size: $karten-tag-size;
+      font-family: $karten-font-family;
+    }
+    .exp-date {
+      margin-left: 165px;
+      font-family: $karten-font-family;
+      font-size: $font-size-small;  
+      line-height: 20px;
+      .datum {
+        margin-left: 20px;
+      } 
+    }
+    .expired {
+      margin-left: 165px;
+      font-size: $font-size-small;
+      font-weigth: $font-weight-expired;
+      color: $red;
+      line-height: 22px;
+    }
+    &:last-child {
+      margin-bottom: 67px;
+    }
+  }
+}

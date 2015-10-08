@@ -1,59 +1,4 @@
-*	{
-	-webkit-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-::-moz-selection { /* Code for Firefox */
-	background: transparent;
-}
-
-::selection {
-	background: transparent;
-
-}
-
-
-
-
-
-// Colors
-$profil-background: white;
-$medi-background: #F0F0F0;
-$card-background: white;      
-$header-font-color: white;
-
-$green: #3BD28E;
-$orange: #FFA500;
-$red: #FB532D;
-
-$font-color-small-title: #757575;
-
-// Typografie
-$main-font: Lato;
-$header-font: Lato-Light;
-$font-family-small: Lato-Light;
-$font-size-text: 16px;
-$header-font-size: 20px;
-
-$font-weight-title: lighter;
-$font-weight-small: lighter;
-
-
-// Karten
-$karten-titel-size: 18px;
-$karten-tag-size: 18px;
-$font-size-small: 14px; 
-$karten-font-family: Lato-Light;
-$font-weight-expired: 400;
-
-// Effekte
-$box-shadow-cards: 0px 1px 2px 0px rgba(0,0,0,0.20);
-$box-shadow-header:  0px 2px 3px 0px rgba(0,0,0,0.20);
-
-
+@import 'config';
 
 
 // - BODY -----------------------
@@ -64,308 +9,37 @@ body	{
 	background: transparent;
 }
 
-body .abbild {
-	z-index: 300;
-	position: fixed;
-	width: 100%;
-	opacity: 0;
 
-}
-
-// - HEADER MEDIKAMENTE -----------------------
-
-.header-medikamente {
-	top: 0;
-	width:100%;
-	z-index:100;
-	position:fixed;
-	height: 72px;
-	margin-top: 0;
-	background: $green;
-	box-shadow: $box-shadow-header;
-	h1 {
-		width:100%;
-		font-family: $header-font;
-		font-size: $header-font-size;
-		line-height: 31.41px;
-		margin: 25px 0;
-		color: $header-font-color;
-		text-align: center;
-		font-weight: $font-weight-title;
-		font-size:$header-font-size;
-	}
-}
-
-input {
-	display: none;
-}
-
-// - HEADER PROFIL -----------------------
-
-.header-profil {
-	top: 0;
-	width:100%;
-	z-index:100;
-	position:fixed;
-	height: 143px;
-	margin-top: 0;
-	background: $green;
-	h1 {
-		width:100%;
-		font-family: $header-font;
-		font-size: $header-font-size;
-		line-height: 31.41px;
-		margin: 25px 0 0px;
-		color: $header-font-color;
-		text-align: center;
-		font-weight: $font-weight-title;
-		font-size:$header-font-size;
-	}
-	img {
-		width: 150px;
-		margin: 0 0 0 29.9%;
-	}
-}
-
-// - HEADER Scan -----------------------
-
-.header-scan {
-	top: 0;
-	width:100%;
-	z-index:100;
-	position:fixed;
-	height: 72px;
-	margin-top: 0;
-	background: $green;
-	box-shadow: $box-shadow-header;
-	h1 {
-		width:100%;
-		font-family: $header-font;
-		font-size: $header-font-size;
-		line-height: 31.41px;
-		margin: 25px 0;
-		color: $header-font-color;
-		text-align: center;
-		font-weight: $font-weight-title;
-		font-size:$header-font-size;
-	}
+.toolbar {
+  position: relative;
+  z-index: 999;
+  background-color: $grey;
+  padding: 20px 20px;
+  padding-top: 40px;
+  text-align: center;
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
 }
 
 
-// - CONTENT MEDIKAMENTE -----------------------
+/* Animation */
 
-.medikamente-main {
-	position: aboslute;
-	top: 0;
-	background: $medi-background;
-	height: 910px;
-	letter-spacing: 1px;
-}
-
-// - CONTENT PROFIL -----------------------
-
-.profil-main {
-	position: aboslute;
-	top: 0;
-	background: $profil-background;
-	letter-spacing: 1px;
-}
-
-// - CONTENT SCAN -----------------------
-
-#video-bg {
-	position: fixed;
-	right: 0px;
-	bottom: 0px;
-	width: auto;
-	min-width: 100%;
-	height: auto;
-	min-height: 100%;
-	z-index: 0;
-	background: transparent url(video/aspirin.jpg) no-repeat;
-	background-size: cover;
-}
-
-.camera-guide {
-	position: fixed;
- 	margin: 40% 20%;
-	width: 227.01px;
-	z-index: 10;
-}
-
-// - KARTEN -----------------------
-
-.karten {
-	padding-top: 20.8%;
-	padding-left: 3%;
-	.medi {
-		position: absolute;
-		width: 94px;
-		margin: 24px 26px;
-	}
-	.exp-icon {
-		float: left;
-		margin-left: 140px;
-		width: 19px;
-	}
-	.karte {
-		float: left;
-		position: relative;
-		margin-top: 11px;
-		width: 97%;
-		height: 117px;
-		background: $card-background;
-		box-shadow: $box-shadow-cards;
-		.tag-gruen {
-			position: absolute;
-			background: $green;
-			height: 117px;
-			width: 2%;
-		}
-		.tag-orange {
-			position: absolute;
-			background: $orange;
-			height: 117px;
-			width: 2%;
-		}
-		.tag-red {
-			position: absolute;
-			background: $red;
-			height: 117px;
-			width: 2%;
-		}
-		.name {
-			margin-left: 140px;
-			padding-top: 3px;
-			margin-bottom: 0;
-			font-size: $karten-titel-size;
-		}
-		.tag {
-			margin-left: 140px;
-			margin-top: 2px;
-			font-size: $karten-tag-size;
-			font-family: $karten-font-family;
-		}
-		.exp-date {
-			margin-left: 165px;
-			font-family: $karten-font-family;
-			font-size: $font-size-small;	
-			line-height: 20px;
-			.datum {
-				margin-left: 20px;
-			}	
-		}
-		.expired {
-			margin-left: 165px;
-			font-size: $font-size-small;
-			font-weigth: $font-weight-expired;
-			color: $red;
-			line-height: 22px;
-		}
-		&:last-child {
-			margin-bottom: 67px;
-		}
-	}
-}
-
-
-// ‹ ›
-
-// ul {
-// 	display: none;
+// // view animations
+// .slide {
+//   position: absolute;
+//   width: 100%;
+//   transition: transform 3.7s ease-in-out;
+//   transform: translateX(0);
+//   &.ng-enter {
+//     transform: translateX(100%);
+//   }
+//   &.ng-enter.ng-enter-active, &.ng-leave {
+//     transform: translateX(0);
+//   }
+//   &.ng-leave.ng-leave-active {
+//     transform: translateX(-100%);
+//   }
 // }
-
-// - PROFIL LISTE -----------------------
-
-.liste {
-	margin: 0;
-	padding: 31.6% 8.5% 0px 8.5%;
-	width: 100%;
-	height: 100%;
-	li {
-		position: relative; 
-		list-style: none;
-		height: auto;
-		padding: 26.5px 0 10px 0;
-		border-bottom: 1px solid lightgrey;
-		height: 73px;
-		span {
-			color: $font-color-small-title;
-			font-size: $font-size-small;
-			font-family: $font-family-small;
-			letter-spacing: 1.6px;
-		}
-		.angabe {
-			float: left;
-		}
-		.eingabe {
-			float: right;
-		}
-		.next {
-			font-family: Lato-Light;
-			float: right;	
-			margin-left: 0.5em;
-			font-size: 29px;	
-			line-height: 12px;	
-		}
-		&:first-child{
-			margin-top: 110px;
-			border-top: 1px solid lightgrey;
-		}
-		&:last-child{
-			margin-bottom: 110px;
-		}
-	}
-}
-
-
-// - FOOTER -----------------------
-
-
-
-footer {
-	background: white;
-	z-index:100;
-	position:fixed;
-	bottom:0;
-	width:100%;
-	height: 54.91px;
-	box-shadow: 0px -2px 3px 0px rgba(0,0,0,0.10);
-	a {
-		text-decoration: none;
-		img {
-			height: 37px;
-			margin-top: 9px;
-			margin-left: 64.3px;
-		}
-	}
-}
-
-
-
-// -----------------------
-
-// - FOOTER -----------------------
-
-
-
-.footer-scan {
-	z-index:100;
-	position:fixed;
-	bottom:0;
-	width:100%;
-	height: 54.91px;
-	background: rgba(89,89,89,0.76);
-	box-shadow: 0px -2px 3px 0px rgba(0,0,0,0.10);
-	a {
-		text-decoration: none;
-		img {
-			height: 37px;
-			margin-top: 9px;
-			margin-left: 64.3px;
-		}
-	}
-}
-
-
-// -----------------------

@@ -396,5 +396,61 @@ body {
   .slide.ng-leave.ng-leave-active {
     transform: translateX(-100%); }
 
+/* line 3, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
+.list {
+  /* Animations */ }
+  /* line 5, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
+  .list .items .item {
+    background-color: #E4DD5C;
+    padding: 20px; }
+    /* line 9, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
+    .list .items .item:nth-child(odd) {
+      background-color: #ddd430; }
+    /* line 12, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
+    .list .items .item.add {
+      background-color: #e45c7a; }
+    /* line 15, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
+    .list .items .item.finished {
+      background-color: gray; }
+      /* line 17, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
+      .list .items .item.finished .name {
+        text-decoration: line-through; }
+      /* line 20, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
+      .list .items .item.finished:nth-child(odd) {
+        background-color: #666666; }
+  /* line 25, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
+  .list .items .tick {
+    display: inline-block; }
+  /* line 28, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
+  .list .items .name {
+    display: inline-block;
+    font-size: 18px; }
+  /* line 37, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
+  .list .item {
+    transition: background-color 0.3s; }
+  /* line 42, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
+  .list .item {
+    animation: fade-in 0.7s ease 1; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -300%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+  /* line 57, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/medikamente.scss */
+  .list .item.ng-leave {
+    animation: fade-out 0.7s ease 1; }
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: none; }
+  to {
+    opacity: 0;
+    transform: translate3d(0, -300%, 0); } }
+
+
 
 /*# sourceMappingURL=app.css.map*/
