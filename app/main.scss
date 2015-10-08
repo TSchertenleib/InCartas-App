@@ -40,13 +40,16 @@ $font-weight-title: lighter;
 // Karten
 $karten-titel-size: 18px;
 $karten-tag-size: 18px;
-$exp-date-font-size: 14px; 
+$font-size-small: 14px; 
 $karten-font-family: Lato-Light;
 $font-weight-expired: 400;
 
 // Effekte
 $box-shadow-cards: 0px 1px 2px 0px rgba(0,0,0,0.20);
 $box-shadow-header:  0px 2px 3px 0px rgba(0,0,0,0.20);
+
+
+
 
 // - BODY -----------------------
 
@@ -60,7 +63,7 @@ body .abbild {
 	z-index: 300;
 	position: fixed;
 	width: 100%;
-	opacity: 0.4;
+	opacity: 0;
 
 }
 
@@ -130,13 +133,13 @@ input {
 	height: 910px;
 }
 
-// - CONTENT MEDIKAMENTE -----------------------
+// - CONTENT PROFIL -----------------------
 
 .profil-main {
 	position: aboslute;
 	top: 0;
 	background: $profil-background;
-	height: 910px;
+	height: 627;
 }
 
 // - KARTEN -----------------------
@@ -203,7 +206,7 @@ input {
 		}
 		.expired {
 			margin-left: 165px;
-			font-size: $exp-date-font-size;
+			font-size: $font-size-small;
 			font-weigth: $font-weight-expired;
 			color: $red;
 			line-height: 22px;
@@ -219,6 +222,35 @@ input {
 
 ul {
 	display: none;
+}
+
+// - PROFIL LISTE -----------------------
+
+.list {
+	margin: 0;
+	color: red;
+	font-size: $font-size-text;
+	padding: 85px 0 20px 0;
+	width: 100%;
+	height: 500px;
+	li {
+		position: relative; 
+		list-style: none;
+		height: auto;
+		padding: 16px 40px 10px 10px;
+		border-bottom: 2px solid white;
+		cursor: pointer;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 50px;
+		.angabe {
+			color: black;
+		}
+		}
+		&:last-child{
+			padding-bottom: 110px;
+		}
+	}
 }
 
 // - FOOTER -----------------------
