@@ -48273,8 +48273,11 @@ require('controllers/profil')(app);
 
 require.register("controllers/karten", function(exports, require, module) {
 module.exports = function(app){
-  app.controller('kartenController', ['$scope', 'meds', function($scope, meds) { 
-    $scope.meds = meds;
+  app.controller('kartenController', ['$scope', 'meds','$timeout' , function($scope, meds, $timeout) { 
+    $scope.meds = [];
+    $timeout(function(){
+    	$scope.meds=meds;
+    }, 100);
   }]);
 };
 });

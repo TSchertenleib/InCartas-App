@@ -375,20 +375,6 @@ body {
   to {
     transform: translateX(0); } }
 
-/* line 44, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-.slide {
-  width: 100%;
-  transform: translateX(0); }
-  /* line 48, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-  .slide.ng-enter {
-    animation: fade-right-to-left 1s; }
-  /* line 51, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-  .slide.ng-enter.ng-enter-active, .slide.ng-leave {
-    transform: translateX(0); }
-  /* line 54, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-  .slide.ng-leave.ng-leave-active {
-    animation: fade-left-to-right 1s; }
-
 /* line 62, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
 .header-profil {
   -webkit-animation-duration: 1.5s; }
@@ -401,42 +387,16 @@ body {
     -webkit-animation-duration: 2s;
     -webkit-animation-delay: 0.3s; }
 
-/* line 82, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-.karte.ng-enter {
-  animation: fade-right-to-left 1s; }
-
-/* line 90, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-.karte.ng-enter-stagger {
-  transition-delay: 0.1s; }
-
-/* line 94, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-.erste {
-  -webkit-animation-duration: 1.5s; }
-
-/* line 98, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-.zweite {
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-delay: 0.1s; }
-
-/* line 103, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-.dritte {
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-delay: 0.2s; }
-
-/* line 108, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-.vierte {
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-delay: 0.3s; }
-
-/* line 113, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-.fuenfte {
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-delay: 0.4s; }
-
-/* line 118, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-.sechste {
-  -webkit-animation-duration: 1.5s;
-  -webkit-animation-delay: 0.5s; }
+/* line 78, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+.karte {
+  transform: translateX(0);
+  transition: all 0.5s ease-in; }
+  /* line 82, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+  .karte.ng-enter-stagger {
+    animation-delay: 0.1s; }
+  /* line 85, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+  .karte.ng-enter {
+    animation: fade-right-to-left 1.5s; }
 
 
 /*# sourceMappingURL=app.css.map*/
