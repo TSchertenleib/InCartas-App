@@ -15,9 +15,9 @@ body	{
   width: 100%;
 }
 
-.slide {
-  min-heigth: 100%;
-}
+// .slide {
+//   min-heigth: 100%;
+// }
 
 // - ANIMATIONS -----------------------
 
@@ -56,34 +56,6 @@ body	{
   // }
 }
 
-
-// PROFIL
-
-.header-profil {
-  -webkit-animation-duration: 1.5s;
-  img {
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 0.1s;  
-  }
-  h1 {
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 0.3s;
-  }
-}
-
-
-// MEDIKAMENTE
-
-
-.karte {
-  transition: all 0.1s ease;
-  &.ng-enter-stagger {
-    animation-delay: 0.1s;
-  }
-  &.ng-enter {
-  animation: fade-right-to-left 1.2s;
-  }
-}
 
 
 

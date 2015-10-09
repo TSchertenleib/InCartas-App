@@ -58,13 +58,11 @@ input {
     height: 117px;
     background: $card-background;
     box-shadow: $box-shadow-cards;
-
     .tagBar {
       position: absolute;
       height: 117px;
       width: 2%;
     }
-
     .karte-gruen {
       .tagBar {
         background: $green;
@@ -126,5 +124,22 @@ input {
       height: 400px;
       animation: karte-open 1s;
     }
+  }
+}
+
+
+
+
+
+// MEDIKAMENTE ANIMATIONS
+
+
+.karte {
+  transition: all 0.1s ease;
+  &.ng-enter-stagger {
+    animation-delay: 0.1s;
+  }
+  &.ng-enter {
+  animation: fade-right-to-left 1.2s;
   }
 }

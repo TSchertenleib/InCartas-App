@@ -48275,6 +48275,8 @@ app.value('meds', [
   }
 ]);
 
+
+
 function widgetsController($scope, $route) {
     $scope.$route = $route;
 }
@@ -48337,30 +48339,6 @@ module.exports = function(app){
 
 });
 
-require.register("controllers/toggleController", function(exports, require, module) {
-// app.controller('toggleController', function($scope) {
-
-
-
-// });
-});
-
-require.register("directives/active", function(exports, require, module) {
-var app = angular.module("InCartas",[]);
-
-app.controller("InCartas",function($scope){
-    
-    $scope.class = "red";
-    
-    $scope.changeClass = function(){
-        if ($scope.class === "red")
-            $scope.class = "blue";
-         else
-            $scope.class = "red";
-    };
-});
-});
-
 require.register("directives/open-medi", function(exports, require, module) {
 app.directive("openMedi", function() {
     return {
@@ -48380,9 +48358,5 @@ $(document).ready(function ()   {
 
 });
 
-require.register("styles/open-medi", function(exports, require, module) {
 
-});
-
-;
 //# sourceMappingURL=app.js.map
