@@ -97,11 +97,11 @@
       margin-left: 165px;
       font-family: $karten-font-family;
       font-weigth: $font-weight-expired;
-      font-size: $font-size-small;  
+      font-size: $font-size-small;
       line-height: 20px;
       .datum {
         margin-left: 20px;
-      } 
+      }
     }
     .expired {
       margin-left: 165px;
@@ -121,16 +121,12 @@
         height: 117px;
       }
       to {
-        height: 400px;
+        height: 600px;
       }
     }
     &.active {
-      height: 400px;
+      height: 600px;
       animation: karte-open 1s;
     }
   }
 }
-
-
-
-
