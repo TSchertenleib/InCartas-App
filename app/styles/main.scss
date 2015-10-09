@@ -42,7 +42,7 @@ body	{
 }
 
 .slide {
-  position: absolute;
+  // position: absolute;
   width: 100%;
   transform: translateX(0);
   &.ng-enter {
@@ -73,6 +73,23 @@ body	{
 
 
 // MEDIKAMENTE
+
+
+.karte {
+
+  // transform: translateX(0);
+  // transition: all 2s ease-in;
+  &.ng-enter {
+  animation: fade-right-to-left 1s;
+  }
+  &.ng-enter-active {
+  // transform: translateX(-100%);  
+  }
+}
+
+.karte.ng-enter-stagger {
+  transition-delay: 0.1s;
+}
 
 .erste {
   -webkit-animation-duration: 1.5s;

@@ -377,7 +377,6 @@ body {
 
 /* line 44, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
 .slide {
-  position: absolute;
   width: 100%;
   transform: translateX(0); }
   /* line 48, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
@@ -402,31 +401,39 @@ body {
     -webkit-animation-duration: 2s;
     -webkit-animation-delay: 0.3s; }
 
-/* line 77, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+/* line 82, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+.karte.ng-enter {
+  animation: fade-right-to-left 1s; }
+
+/* line 90, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+.karte.ng-enter-stagger {
+  transition-delay: 0.1s; }
+
+/* line 94, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
 .erste {
   -webkit-animation-duration: 1.5s; }
 
-/* line 81, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+/* line 98, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
 .zweite {
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 0.1s; }
 
-/* line 86, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+/* line 103, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
 .dritte {
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 0.2s; }
 
-/* line 91, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+/* line 108, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
 .vierte {
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 0.3s; }
 
-/* line 96, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+/* line 113, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
 .fuenfte {
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 0.4s; }
 
-/* line 101, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+/* line 118, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
 .sechste {
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 0.5s; }

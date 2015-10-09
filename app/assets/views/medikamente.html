@@ -15,7 +15,7 @@
 		<div class="karten" ng-controller="kartenController">
 			<div class="karte" ng-repeat="med in meds" ng-controller="medikamenteController" ng-click="toggleMed()" ng-class="medClass">
 				<div class="tag-gruen"></div>
-				<img class="medi" src="images/meds/aspirin.jpg">
+				<img class="medi" ng-src="{{med.bild}}">
 				<h2 class="name">{{med.name}}</h2>
 				<p class="tag">{{med.tag}}</p>
 				<img class="exp-icon" src="">

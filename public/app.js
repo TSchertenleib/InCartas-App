@@ -48223,12 +48223,13 @@ app.value('meds', [
     name: 'ASPIRIN', 
     tag: 'Schmerzen / Fieber', 
     datum: '22.07.2017',
-    bild: 'images/icons/ablaufdatum-green.png',
+    bild: 'images/meds/aspirin.jpg',
   }, 
   { 
     name: 'Paracetamol', 
     tag: 'Schmerzen / Fieber', 
     datum: '13.04.2016',
+    bild: "images/meds/Paracetamol.jpg"
   }, 
   { 
     name: 'Olynth', 
