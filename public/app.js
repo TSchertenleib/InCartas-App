@@ -48285,10 +48285,7 @@ function widgetsController($scope, $route) {
 require('controllers/karten')(app);
 require('controllers/medikamente')(app);
 require('controllers/profil')(app);
-// require('controllers/toggleController')(app);
 
-// load directives
-// require('directives/ic-footer')(app);
 
 
 
@@ -48325,14 +48322,15 @@ module.exports = function(app){
 
 require.register("controllers/profil", function(exports, require, module) {
 module.exports = function(app){
-  // define controller
-  app.controller('profilController', ['$scope', '$route', '$location', 'items', function($scope, $route, $location, items) {
-    // assign single item
-    $scope.item = items[parseInt($route.current.params.id)];
+  app.controller('profilController', ['$scope', '$element', function($scope, $element) {
+    $scope.medClass = ''
 
-    // define save method
-    $scope.save = function(){
-      $location.path('/');
+    $scope.toggleMed = function(){
+      if($scope.medClass == '') {
+        $scope.medClass = 'active';
+      } else {
+        $scope.medClass = '';
+      }
     }
   }]);
 };

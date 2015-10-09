@@ -82,10 +82,7 @@ function widgetsController($scope, $route) {
 require('controllers/karten')(app);
 require('controllers/medikamente')(app);
 require('controllers/profil')(app);
-// require('controllers/toggleController')(app);
 
-// load directives
-// require('directives/ic-footer')(app);
 
 
 
