@@ -76,54 +76,17 @@ body	{
 
 
 .karte {
-  transform: translateX(0);
-  transition: all 0.5s ease-in;
-
+  transition: all 0.1s ease;
   &.ng-enter-stagger {
     animation-delay: 0.1s;
   }
   &.ng-enter {
-  // transform: translateX(100vw);  
-  animation: fade-right-to-left 1.5s;
+  animation: fade-right-to-left 1.2s;
   }
-  
 }
 
 
 
-
-
-// .erste {
-//   -webkit-animation-duration: 1.5s;
-// }
-
-// .zweite {
-//   -webkit-animation-duration: 1.5s;
-//   -webkit-animation-delay: 0.1s;  
-// }
-
-// .dritte {
-//   -webkit-animation-duration: 1.5s;
-//   -webkit-animation-delay: 0.2s; 
-// }
-
-// .vierte {
-//   -webkit-animation-duration: 1.5s;
-//   -webkit-animation-delay: 0.3s; 
-// }
-
-// .fuenfte {
-//   -webkit-animation-duration: 1.5s;
-//   -webkit-animation-delay: 0.4s; 
-// }
-
-// .sechste {
-//   -webkit-animation-duration: 1.5s;
-//   -webkit-animation-delay: 0.5s; 
-// }
-
-
-// LINGS RECHTS
 
 
 

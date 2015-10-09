@@ -54,32 +54,36 @@ input {
     width: 19px;
   }
   .karte {
-    margin-top: 11px;
+    margin-top: 0px;
     width: 97%;
     height: 117px;
     background: $card-background;
     box-shadow: $box-shadow-cards;
-    .tag-gruen {
+
+    .tagBar {
       position: absolute;
-      background: $green;
       height: 117px;
       width: 2%;
     }
-    .tag-orange {
-      position: absolute;
-      background: $orange;
-      height: 117px;
-      width: 2%;
+
+    .karte-gruen {
+      .tagBar {
+        background: $green;
+      }
     }
-    .tag-red {
-      position: absolute;
-      background: $red;
-      height: 117px;
-      width: 2%;
+    .karte-orange {
+      .tagBar {
+        background: $orange;
+      }
+    }
+    .karte-red {
+      .tagBar {
+        background: $red;
+      }
     }
     .name {
       margin-left: 140px;
-      padding-top: 3px;
+      padding-top: 15px;
       margin-bottom: 0;
       font-size: $karten-titel-size;
     }

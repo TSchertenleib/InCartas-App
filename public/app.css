@@ -243,58 +243,54 @@ input {
     width: 19px; }
   /* line 56, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
   .karten .karte {
-    margin-top: 11px;
+    margin-top: 0px;
     width: 97%;
     height: 117px;
     background: white;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }
-    /* line 62, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
-    .karten .karte .tag-gruen {
+    /* line 63, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    .karten .karte .tagBar {
       position: absolute;
-      background: #3BD28E;
       height: 117px;
       width: 2%; }
-    /* line 68, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
-    .karten .karte .tag-orange {
-      position: absolute;
-      background: #FFA500;
-      height: 117px;
-      width: 2%; }
-    /* line 74, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
-    .karten .karte .tag-red {
-      position: absolute;
-      background: #FB532D;
-      height: 117px;
-      width: 2%; }
+    /* line 70, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    .karten .karte .karte-gruen .tagBar {
+      background: #3BD28E; }
+    /* line 75, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    .karten .karte .karte-orange .tagBar {
+      background: #FFA500; }
     /* line 80, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    .karten .karte .karte-red .tagBar {
+      background: #FB532D; }
+    /* line 84, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
     .karten .karte .name {
       margin-left: 140px;
-      padding-top: 3px;
+      padding-top: 15px;
       margin-bottom: 0;
       font-size: 18px; }
-    /* line 86, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    /* line 90, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
     .karten .karte .tag {
       margin-left: 140px;
       margin-top: 2px;
       font-size: 18px;
       font-family: Lato-Light; }
-    /* line 92, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    /* line 96, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
     .karten .karte .exp-date {
       margin-left: 165px;
       font-family: Lato-Light;
       font-size: 14px;
       line-height: 20px; }
-      /* line 97, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+      /* line 101, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
       .karten .karte .exp-date .datum {
         margin-left: 20px; }
-    /* line 101, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    /* line 105, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
     .karten .karte .expired {
       margin-left: 165px;
       font-size: 14px;
       font-weigth: 400;
       color: #FB532D;
       line-height: 22px; }
-    /* line 108, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    /* line 112, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
     .karten .karte:last-child {
       margin-bottom: 67px; }
 
@@ -303,7 +299,7 @@ input {
     height: 117px; }
   to {
     height: 400px; } }
-    /* line 122, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
+    /* line 126, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/_medikamente.scss */
     .karten .karte.active {
       height: 400px;
       animation: karte-open 1s; }
@@ -389,14 +385,13 @@ body {
 
 /* line 78, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
 .karte {
-  transform: translateX(0);
-  transition: all 0.5s ease-in; }
-  /* line 82, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+  transition: all 0.1s ease; }
+  /* line 80, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
   .karte.ng-enter-stagger {
     animation-delay: 0.1s; }
-  /* line 85, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+  /* line 83, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
   .karte.ng-enter {
-    animation: fade-right-to-left 1.5s; }
+    animation: fade-right-to-left 1.2s; }
 
 
 /*# sourceMappingURL=app.css.map*/

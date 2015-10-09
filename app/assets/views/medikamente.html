@@ -14,12 +14,15 @@
 		<!-- 	<div class="main" ng-controller="directoryController"> -->
 		<div class="karten" ng-controller="kartenController">
 			<div class="karte" ng-repeat="med in meds" ng-controller="medikamenteController" ng-click="toggleMed()" ng-class="medClass">
-				<div class="tag-gruen"></div>
-				<img class="medi" ng-src="{{med.bild}}">
-				<h2 class="name">{{med.name}}</h2>
-				<p class="tag">{{med.tag}}</p>
-				<img class="exp-icon" src="">
-				<p class="exp-date">Exp. Date <span class="datum">{{med.datum}}</span></p>
+				<div class="karte-{{med.typ}}">
+					<div class="tagBar"></div>
+					<img class="medi" ng-src="{{med.bild}}">
+					<h2 class="name">{{med.name}}</h2>
+					<p class="tag">{{med.tag}}</p>
+					<img class="exp-icon" ng-src="{{med.icon}}" src="">
+					<p class="exp-date">{{med.exp}}<span class="datum">{{med.datum}}</span></p>
+					<p class="expired">{{med.expab}}</p>
+				</div>
 			</div>
 
 			<!-- <div class="karte erste" ng-controller="medikamenteController" ng-click="toggleMed()" ng-class="medClass">
