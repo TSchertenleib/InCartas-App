@@ -337,20 +337,37 @@ body {
   background: transparent; }
 
 /* line 20, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+GENERAL
 .slide {
   position: absolute;
   width: 100%;
   transition: transform 0.7s ease-in-out;
   transform: translateX(0); }
   /* line 25, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-  .slide.ng-enter {
+  GENERAL
+.slide.ng-enter {
     transform: translateX(100%); }
   /* line 28, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-  .slide.ng-enter.ng-enter-active, .slide.ng-leave {
+  GENERAL
+.slide.ng-enter.ng-enter-active, GENERAL
+.slide.ng-leave {
     transform: translateX(0); }
   /* line 31, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
-  .slide.ng-leave.ng-leave-active {
+  GENERAL
+.slide.ng-leave.ng-leave-active {
     transform: translateX(-100%); }
+
+/* line 39, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+.header-profil {
+  -webkit-animation-duration: 1.5s; }
+  /* line 41, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+  .header-profil img {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.1s; }
+  /* line 45, /Users/Thomas/Dropbox/zhdk/2015:2016/Mobile User Interface/04_programming/InCartas/app/styles/main.scss */
+  .header-profil h1 {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.3s; }
 
 
 /*# sourceMappingURL=app.css.map*/

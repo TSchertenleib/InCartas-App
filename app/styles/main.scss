@@ -15,7 +15,7 @@ body	{
 
 // - ANIMATIONS -----------------------
 
-//view animations
+GENERAL
 
 .slide {
   position: absolute;
@@ -33,8 +33,20 @@ body	{
   }
 }
 
-.header-medikamente {
-  h1 {
 
+// PROFIL
+
+.header-profil {
+  -webkit-animation-duration: 1.5s;
+  img {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0.1s;  
+  }
+  h1 {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0.3s;
   }
 }
+
+
+// MEDIKAMENTE
