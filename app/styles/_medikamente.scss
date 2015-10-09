@@ -34,7 +34,6 @@ input {
   position: aboslute;
   top: 0;
   background: $medi-background;
-  height: 910px;
   letter-spacing: 1px;
 }
 
@@ -43,6 +42,7 @@ input {
 .karten {
   padding-top: 20.8%;
   padding-left: 3%;
+  position: relative;
   .medi {
     position: absolute;
     width: 94px;
@@ -54,8 +54,6 @@ input {
     width: 19px;
   }
   .karte {
-    float: left;
-    position: relative;
     margin-top: 11px;
     width: 97%;
     height: 117px;
@@ -109,6 +107,21 @@ input {
     }
     &:last-child {
       margin-bottom: 67px;
+    }
+
+    // animation stuff
+
+    @keyframes karte-open {
+      from {
+        height: 117px;
+      }
+      to {
+        height: 400px;
+      }
+    }
+    &.active {
+      height: 400px;
+      animation: karte-open 1s;
     }
   }
 }

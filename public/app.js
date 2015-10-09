@@ -48218,14 +48218,52 @@ app.config(['$routeProvider', function($routeProvider) {
     });
 }]);
 
+app.value('meds', [
+  { 
+    name: 'ASPIRIN', 
+    tag: 'Schmerzen / Fieber', 
+    datum: '22.07.2017',
+    bild: 'images/icons/ablaufdatum-green.png',
+  }, 
+  { 
+    name: 'Paracetamol', 
+    tag: 'Schmerzen / Fieber', 
+    datum: '13.04.2016',
+  }, 
+  { 
+    name: 'Olynth', 
+    tag: 'Erkältung', 
+    datum: '22.10.2015',
+  }, 
+  { 
+    name: 'Bepanthen', 
+    tag: 'Wunderkrankungen', 
+    datum: '27.11.2015',
+  }, 
+  { 
+    name: 'Voltaren', 
+    tag: 'Schmerzen', 
+    expired: 'Produkt ist abgelaufen!',
+  }, 
+  { 
+    name: 'Bepanthen', 
+    tag: 'Wunderkrankungen', 
+    expired: 'Produkt ist abgelaufen!',
+  }
+]);
+
+function widgetsController($scope, $route) {
+    $scope.$route = $route;
+}
 
 // load controllers
+require('controllers/karten')(app);
 require('controllers/medikamente')(app);
 require('controllers/profil')(app);
+// require('controllers/toggleController')(app);
 
 // load directives
 // require('directives/ic-footer')(app);
-
 
 
 
@@ -48234,91 +48272,26 @@ require('controllers/profil')(app);
 
 require.register("controllers/karten", function(exports, require, module) {
 module.exports = function(app){
-  app.controller('kartenController', ['$scope', function($scope) { 
-    $scope.products = [
-    { 
-      name: 'ASPIRIN', 
-      tag: 'Schmerzen / Fieber', 
-      datum: '22.07.2017',
-    }, 
-    { 
-      name: 'Paracetamol', 
-      tag: 'Schmerzen / Fieber', 
-      datum: '13.04.2016',
-    }, 
-    { 
-      name: 'Olynth', 
-      tag: 'Erkältung', 
-      datum: '22.10.2015',
-    }, 
-    { 
-      name: 'Bepanthen', 
-      tag: 'Wunderkrankungen', 
-      datum: '27.11.2015',
-    }, 
-    { 
-      name: 'Voltaren', 
-      tag: 'Schmerzen', 
-      expired: 'Produkt ist abgelaufen!',
-    }, 
-    { 
-      name: 'Bepanthen', 
-      tag: 'Wunderkrankungen', 
-      expired: 'Produkt ist abgelaufen!',
-    }
-    ];
+  app.controller('kartenController', ['$scope', 'meds', function($scope, meds) { 
+    $scope.meds = meds;
   }]);
 };
 });
 
 require.register("controllers/medikamente", function(exports, require, module) {
 module.exports = function(app){
-  // define controller
-  app.controller('medikamenteController', ['$scope', '$location', 'items', function($scope, $location, items) {
-    // set items on scope
-    $scope.items = items;
+  app.controller('medikamenteController', ['$scope', '$element', function($scope, $element) {
+    $scope.medClass = ''
 
-    // add new item to list
-    $scope.add = function(){
-      items.push({
-        name: '...',
-        finished: false
-      });
-    };
-
-    // watch items
-    $scope.$watchCollection('items', function() {
-      if(items.length == 0) {
-        items.push({
-          name: "Are you sure there isn't something to work on?",
-          finished: false
-        });
-      }
-    });
-
-    // edit item
-    $scope.edit = function(item) {
-      $location.path(items.indexOf(item));
-    };
-
-    // swiep left (revives item)
-    $scope.left = function(item){
-      if(item.finished) {
-        item.finished = false;
-      }
-    };
-
-    // swipe right (removes item in 2 steps)
-    $scope.right = function(item){
-      if(!item.finished) {
-        item.finished = true;
+    $scope.toggleMed = function(){
+      if($scope.medClass == '') {
+        $scope.medClass = 'active';
       } else {
-        items.splice(items.indexOf(item), 1);
+        $scope.medClass = '';
       }
     }
   }]);
 };
-
 
 });
 
@@ -48338,14 +48311,40 @@ module.exports = function(app){
 
 });
 
-require.register("directives/ic-footer", function(exports, require, module) {
-app.directive('icFooter', function (app) {
-	console.log("hello directive");
-	return {
-		templateUrl: 'directives/ic-footer.html'
-	};
+require.register("controllers/toggleController", function(exports, require, module) {
+// app.controller('toggleController', function($scope) {
+
+
+
+// });
 });
 
+require.register("directives/active", function(exports, require, module) {
+var app = angular.module("InCartas",[]);
+
+app.controller("InCartas",function($scope){
+    
+    $scope.class = "red";
+    
+    $scope.changeClass = function(){
+        if ($scope.class === "red")
+            $scope.class = "blue";
+         else
+            $scope.class = "red";
+    };
+});
+});
+
+require.register("directives/open-medi", function(exports, require, module) {
+app.directive("openMedi", function() {
+    return {
+        link: function(scope, elem, attrs) {
+            elem.on("click", function() {
+                elem.addClass("active");
+            });
+        }
+    };
+});
 });
 
 require.register("main", function(exports, require, module) {
@@ -48355,5 +48354,9 @@ $(document).ready(function ()   {
 
 });
 
+require.register("styles/open-medi", function(exports, require, module) {
 
+});
+
+;
 //# sourceMappingURL=app.js.map

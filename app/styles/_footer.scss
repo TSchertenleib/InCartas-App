@@ -13,10 +13,18 @@ footer {
 	box-shadow: 0px -2px 3px 0px rgba(0,0,0,0.10);
 	a {
 		text-decoration: none;
-		img {
+		img, svg {
 			height: 37px;
 			margin-top: 9px;
 			margin-left: 64.3px;
+			path, ellipse {
+				stroke: red;
+			}
 		}
 	}
+}
+
+
+.active {
+	background: red;
 }

@@ -35,8 +35,12 @@
   top: 0;
   background: $profil-background;
   letter-spacing: 1px;
+  min-heigth: 100%;
 }
 
+.profil-hintergrund {
+  color: white;
+}
 
 // - PROFIL LISTE -----------------------
 

@@ -8,12 +8,21 @@
 <!-- </div> -->
 	
     <header class="header-medikamente">
-      <h1 class="animated fadeInDownBig">Medikamente</h1>
+      <h1>Medikamente</h1>
     </header>
 
 		<!-- 	<div class="main" ng-controller="directoryController"> -->
-		<div class="karten">
-			<div class="karte">
+		<div class="karten" ng-controller="kartenController">
+			<div class="karte" ng-repeat="med in meds" ng-controller="medikamenteController" ng-click="toggleMed()" ng-class="medClass">
+				<div class="tag-gruen"></div>
+				<img class="medi" src="images/meds/aspirin.jpg">
+				<h2 class="name">{{med.name}}</h2>
+				<p class="tag">{{med.tag}}</p>
+				<img class="exp-icon" src="">
+				<p class="exp-date">Exp. Date <span class="datum">{{med.datum}}</span></p>
+			</div>
+
+			<!-- <div class="karte erste" ng-controller="medikamenteController" ng-click="toggleMed()" ng-class="medClass">
 				<div class="tag-gruen"></div>
 				<img class="medi" src="images/meds/aspirin.jpg">
 				<h2 class="name">ASPIRIN</h2>
@@ -23,7 +32,7 @@
 			</div>
 
 
-			<div class="karte">
+			<div class="karte zweite animated fadeInRightBig">
 				<div class="tag-gruen"></div>
 				<img class="medi" src="images/meds/Paracetamol.jpg">
 				<h2 class="name">Paracetamol</h2>
@@ -32,7 +41,7 @@
 				<p class="exp-date">Exp. Date <span class="datum">13.04.2016</span></p>
 			</div>
 
-			<div class="karte">
+			<div class="karte dritte animated fadeInRightBig">
 				<div class="tag-orange"></div>
 				<img class="medi" src="images/meds/Olynth.jpg">
 				<h2 class="name">Olynth</h2>
@@ -41,7 +50,7 @@
 				<p class="exp-date">Exp. Date <span class="datum">22.10.2015</span></p>
 			</div>
 
-			<div class="karte">
+			<div class="karte vierte animated fadeInRightBig">
 				<div class="tag-orange"></div>
 				<img class="medi" src="images/meds/bepanthen.jpg">
 				<h2 class="name">Bepanthen</h2>
@@ -50,7 +59,7 @@
 				<p class="exp-date">Exp. Date <span class="datum">27.11.2015</span></p>
 			</div>
 
-			<div class="karte">
+			<div class="karte fuenfte animated fadeInRightBig">
 				<div class="tag-red"></div>
 				<img class="medi" src="images/meds/diclofenac.jpg">
 				<h2 class="name">Diclofenac</h2>
@@ -59,14 +68,14 @@
 				<p class="expired">Produkt ist abgelaufen!</p>
 			</div>			
 
-			<div class="karte">
+			<div class="karte sechste animated fadeInRightBig">
 				<div class="tag-red"></div>
 				<img class="medi" src="images/meds/voltaren.jpg">
 				<h2 class="name">Voltaren</h2>
 				<p class="tag">Schmerzen</p>
 				<img class="exp-icon" src="images/icons/ablaufdatum-red.png">
 				<p class="expired">Produkt ist abgelaufen!</p>
-			</div>
+			</div> -->
 		</div>
 
 
