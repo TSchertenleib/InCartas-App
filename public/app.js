@@ -48208,23 +48208,23 @@ var app = angular.module('InCartasApp', ['ngTouch', 'ngAnimate', 'ngRoute']);
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
     .when('/', { 
-      templateUrl: 'views/profil.html'
-    })
-    .when('/:id', {
       templateUrl: 'views/medikamente.html'
+    })
+    .when('/profil', {
+      templateUrl: 'views/profil.html'
+    })   
+    .when('/scan', {
+      templateUrl: 'views/scan.html'
     });
 }]);
 
-// set initial list items
-// app.value('items',[
-//   { name: 'Buy a nice dog house', finished: true },
-//   { name: 'Get a dog from the pet shop', finished: false },
-//   { name: 'Order some proper dog food', finished: false }
-// ]);
 
 // load controllers
 require('controllers/medikamente')(app);
 require('controllers/profil')(app);
+
+// load directives
+// require('directives/ic-footer')(app);
 
 
 
@@ -48265,47 +48265,6 @@ module.exports = function(app){
       name: 'Bepanthen', 
       tag: 'Wunderkrankungen', 
       expired: 'Produkt ist abgelaufen!',
-    }
-    ];
-  }]);
-};
-});
-
-require.register("controllers/kartenController", function(exports, require, module) {
-module.exports = function(app){
-  app.controller('kartenController', ['$scope', function($scope) { 
-    $scope.products = [
-    { 
-      name: 'The Book of Trees', 
-      price: 19, 
-      pubdate: new Date('2014', '03', '08'), 
-      cover: 'img/the-book-of-trees.jpg',
-      likes: 0,
-      dislikes: 0
-    }, 
-    { 
-      name: 'Program or be Programmed', 
-      price: 8, 
-      pubdate: new Date('2013', '08', '01'), 
-      cover: 'img/program-or-be-programmed.jpg',
-      likes: 0,
-      dislikes: 0 
-    }, 
-    { 
-      name: 'Harry Potter & The Prisoner of Azkaban', 
-      price: 11.99, 
-      pubdate: new Date('1999', '07', '08'), 
-      cover: 'http://upload.wikimedia.org/wikipedia/en/b/b4/Harry_Potter_and_the_Prisoner_of_Azkaban_(US_cover).jpg',
-      likes: 0,
-      dislikes: 0 
-    }, 
-    { 
-      name: 'Ready Player One', 
-      price: 7.99, 
-      pubdate: new Date('2011', '08', '16'), 
-      cover: 'http://upload.wikimedia.org/wikipedia/en/a/a4/Ready_Player_One_cover.jpg',
-      likes: 0,
-      dislikes: 0 
     }
     ];
   }]);
@@ -48376,6 +48335,16 @@ module.exports = function(app){
     }
   }]);
 };
+
+});
+
+require.register("directives/ic-footer", function(exports, require, module) {
+app.directive('icFooter', function (app) {
+	console.log("hello directive");
+	return {
+		templateUrl: 'directives/ic-footer.html'
+	};
+});
 
 });
 

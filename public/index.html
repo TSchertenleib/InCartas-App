@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>InCartas</title>
-    <link href="//fonts.googleapis.com/css?family=Roboto:300,500,400" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="app.css" media="screen" charset="utf-8">
     <script src="app.js" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
@@ -14,33 +13,31 @@
   <body ng-app="InCartasApp">
   <div class="medikamente-main">
 
-    <header class="header-medikamente">
-      <h1>Medikamente</h1>
-<!--       <input type="text" ng-model="search"> -->
-    </header>
 
 
 
     <div class="slide" ng-view></div>
 
 
-    <footer>
-      <a href="medikamente.html">
+    <!-- <footer>
+      <a href="#/">
         <img src="images/icons/medikamente_active.png">
       </a>
-      <a href="profil.html">
+      <a href="#/profil">
         <img src="images/icons/profil_inactive.png">
       </a>
-      <a href="scan.html">
+      <a href="#/scan">
         <img src="images/icons/scan_inactive.png">
       </a>
-    </footer>
+    </footer> -->
+    <ic-footer></ic-footer>
   </div>
 
 
   <script type="text/javascript">
   require('app');
   </script>
+
 
 </body>
 </html>

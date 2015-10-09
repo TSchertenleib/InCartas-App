@@ -13,9 +13,10 @@ body	{
 }
 
 
-/* Animation */
+// - ANIMATIONS -----------------------
 
-// view animations
+//view animations
+
 .slide {
   position: absolute;
   width: 100%;
@@ -29,5 +30,11 @@ body	{
   }
   &.ng-leave.ng-leave-active {
     transform: translateX(-100%);
+  }
+}
+
+.header-medikamente {
+  h1 {
+
   }
 }
