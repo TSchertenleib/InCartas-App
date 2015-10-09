@@ -1,93 +1,19 @@
-<!-- <div class="medikamente" ng-controller="medikamenteController"> -->
-<!--   <div class="items">
-    <div class="item repeated-item" ng-repeat="item in items" ng-class="{finished: item.finished}" ng-swipe-right="right(item)" ng-swipe-left="left(item)" ng-click="edit(item)">
-      <div class="name">{{item.name}}</div>
-    </div>
 
-  </div> -->
-<!-- </div> -->
-	
-    <header class="header-medikamente">
-      <h1>Medikamente</h1>
-    </header>
+<header class="header-medikamente">
+	<h1>Medikamente</h1>
+</header>
 
-		<!-- 	<div class="main" ng-controller="directoryController"> -->
-		<div class="karten" ng-controller="kartenController">
-			<div class="karte" ng-repeat="med in meds" ng-controller="medikamenteController" ng-click="toggleMed()" ng-class="medClass">
-				<div class="karte-{{med.typ}}">
-					<div class="tagBar"></div>
-					<img class="medi" ng-src="{{med.bild}}">
-					<h2 class="name">{{med.name}}</h2>
-					<p class="tag">{{med.tag}}</p>
-					<img class="exp-icon" ng-src="{{med.icon}}" src="">
-					<p class="expired">{{med.expab}}</p>
-					<p class="exp-date">{{med.exp}}<span class="datum">{{med.datum}}</span></p>
-
-				</div>
-			</div>
-
-			<!-- <div class="karte erste" ng-controller="medikamenteController" ng-click="toggleMed()" ng-class="medClass">
-				<div class="tag-gruen"></div>
-				<img class="medi" src="images/meds/aspirin.jpg">
-				<h2 class="name">ASPIRIN</h2>
-				<p class="tag">Schmerzen / Fieber</p>
-				<img class="exp-icon" src="images/icons/ablaufdatum-green.png">
-				<p class="exp-date">Exp. Date <span class="datum">22.07.2017</span></p>
-			</div>
-
-
-			<div class="karte zweite animated fadeInRightBig">
-				<div class="tag-gruen"></div>
-				<img class="medi" src="images/meds/Paracetamol.jpg">
-				<h2 class="name">Paracetamol</h2>
-				<p class="tag">Schmerzen / Fieber</p>
-				<img class="exp-icon" src="images/icons/ablaufdatum-green.png">
-				<p class="exp-date">Exp. Date <span class="datum">13.04.2016</span></p>
-			</div>
-
-			<div class="karte dritte animated fadeInRightBig">
-				<div class="tag-orange"></div>
-				<img class="medi" src="images/meds/Olynth.jpg">
-				<h2 class="name">Olynth</h2>
-				<p class="tag">Erkältung</p>
-				<img class="exp-icon" src="images/icons/ablaufdatum-orange.png">
-				<p class="exp-date">Exp. Date <span class="datum">22.10.2015</span></p>
-			</div>
-
-			<div class="karte vierte animated fadeInRightBig">
-				<div class="tag-orange"></div>
-				<img class="medi" src="images/meds/bepanthen.jpg">
-				<h2 class="name">Bepanthen</h2>
-				<p class="tag">Wunderkrankungen</p>
-				<img class="exp-icon" src="images/icons/ablaufdatum-orange.png">
-				<p class="exp-date">Exp. Date <span class="datum">27.11.2015</span></p>
-			</div>
-
-			<div class="karte fuenfte animated fadeInRightBig">
-				<div class="tag-red"></div>
-				<img class="medi" src="images/meds/diclofenac.jpg">
-				<h2 class="name">Diclofenac</h2>
-				<p class="tag">Schmerzen</p>
-				<img class="exp-icon" src="images/icons/ablaufdatum-red.png">
-				<p class="expired">Produkt ist abgelaufen!</p>
-			</div>			
-
-			<div class="karte sechste animated fadeInRightBig">
-				<div class="tag-red"></div>
-				<img class="medi" src="images/meds/voltaren.jpg">
-				<h2 class="name">Voltaren</h2>
-				<p class="tag">Schmerzen</p>
-				<img class="exp-icon" src="images/icons/ablaufdatum-red.png">
-				<p class="expired">Produkt ist abgelaufen!</p>
-			</div> -->
+<div class="karten" ng-controller="kartenController">
+	<div class="karte" ng-repeat="med in meds" ng-controller="medikamenteController" ng-click="toggleMed()" ng-class="medClass">
+		<div class="karte-{{med.typ}}">
+			<div class="tagBar"></div>
+			<img class="medi" ng-src="{{med.bild}}">
+			<h2 class="name">{{med.name}}</h2>
+			<p class="tag">{{med.tag}}</p>
+			<img class="exp-icon" ng-src="{{med.icon}}" src="">
+			<p class="expired">{{med.expab}}</p>
+			<p class="exp-date">{{med.exp}}<span class="datum">{{med.datum}}</span></p>
 		</div>
+	</div>
+</div>
 
-
-
-
-
-<!--     <div class="add item" ng-click="add()">
-      <div class="name">NEW ITEM</div>
-    </div> -->
-
-	
