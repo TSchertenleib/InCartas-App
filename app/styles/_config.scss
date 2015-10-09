@@ -33,21 +33,26 @@ $font-color-small-title: #757575;
 
 // Typografie
 $main-font: Lato;
-$header-font: Lato-Light;
-$font-family-small: Lato-Light;
+$header-font: Lato;
+$header-font-weight: 300;
+$font-family-small: Lato;
+$small-font-weight: 300;
 $font-size-text: 16px;
 $header-font-size: 20px;
 
-$font-weight-title: lighter;
-$font-weight-small: lighter;
+$font-weight-title: 400;
+$font-weight-tag: 300;
+$font-weight-small: 300;
+$font-weight-karte: 400;
 
 
 // Karten
 $karten-titel-size: 18px;
 $karten-tag-size: 18px;
 $font-size-small: 14px; 
-$karten-font-family: Lato-Light;
-$font-weight-expired: 400;
+$karten-font-family: Lato;
+$karten-font-weight: 300;
+$font-weight-expired: 700;
 
 // Shadow
 $box-shadow-cards: 0px 1px 2px 0px rgba(0,0,0,0.20);

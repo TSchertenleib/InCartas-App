@@ -22,7 +22,7 @@ body	{
 
 @keyframes fade-right-to-left {
   from {
-    transform: translateX(100%)
+    transform: translateX(100vw)
   }
   to {
     transform: translateX(0)
@@ -31,7 +31,7 @@ body	{
 
 @keyframes fade-left-to-right {
   from {
-    transform: translateX(100%)
+    transform: translateX(100vw)
   }
   to {
     transform: translateX(0)
@@ -56,6 +56,17 @@ body	{
 
 
 
+// MEDIKAMENTE ANIMATIONS
 
+
+.karte {
+  transition: all 0.1s ease;
+  &.ng-enter-stagger {
+    animation-delay: 0.1s;
+  }
+  &.ng-enter {
+  animation: fade-right-to-left 1.2s;
+  }
+}
 
 
