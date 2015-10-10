@@ -63,6 +63,22 @@
       position: absolute;
       height: 117px;
       width: 2%;
+      opacity: 1;
+
+      @keyframes fadeOutUp {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+          transform: translate3d(0, -100%, 0);
+        }
+      }
+      &.active {
+        opacity: 0;
+        animation: fadeOutUp 1s;
+      }
+
     }
     .karte-gruen {
       .tagBar {

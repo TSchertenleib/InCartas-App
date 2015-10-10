@@ -6,7 +6,7 @@
 <div class="karten" ng-controller="kartenController">
 	<div class="karte" ng-repeat="med in meds" ng-controller="medikamenteController" ng-click="toggleMed()" ng-class="medClass">
 		<div class="karte-{{med.typ}}">
-			<div class="tagBar"></div>
+			<div class="tagBar" ng-class="medClass"></div>
 			<img class="medi" ng-src="{{med.bild}}">
 			<h2 class="name">{{med.name}}</h2>
 			<p class="tag">{{med.tag}}</p>
