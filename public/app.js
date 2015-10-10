@@ -48227,6 +48227,7 @@ app.value('meds', [
     datum: '22.07.2017',
     icon: 'images/icons/ablaufdatum-green.png',
     bild: 'images/meds/aspirin.jpg',
+    beschreibung: 'ASPIRIN enthält Acetylsalicsäure. Dieser hat schmerzstillende, fiebersenkende und entzündungshemmende Wirkung.'
   }, 
   { 
     typ: 'gruen',
@@ -48289,6 +48290,23 @@ require('controllers/profil')(app);
 
 
 
+});
+
+require.register("controllers/header", function(exports, require, module) {
+module.exports = function(app){
+  app.controller('medikamenteController', ['$scope', '$element', function($scope, $element) {
+    $scope.medClass = ''
+
+    $scope.toggleMed = function(){
+      if($scope.medClass == '') {
+        $scope.medClass = 'active';
+      } else {
+        $scope.medClass = '';
+      }
+    }
+  }]);
+};
+
 
 });
 
@@ -48317,6 +48335,7 @@ module.exports = function(app){
     }
   }]);
 };
+
 
 });
 

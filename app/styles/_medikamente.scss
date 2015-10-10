@@ -2,6 +2,13 @@
 
 // - HEADER MEDIKAMENTE -----------------------
 
+.vorlage {
+  width:375px;
+  position: absolute;
+  opacity: 0.3;
+  z-index: 100;
+}
+
 .header-medikamente {
   top: 0;
   width:100%;
@@ -22,6 +29,18 @@
     font-weight: $font-weight-title;
     font-size:$header-font-size;
   }
+  @keyframes headerUp {
+    from {
+      top: 0;
+    }
+    to {
+      top:-50px;
+    }
+  }
+  &.active {
+    top:-50px;
+    animation: headerUp 1s;
+  }
 }
 
 
@@ -35,6 +54,7 @@
   background: $medi-background;
   letter-spacing: 1px;
 }
+
 
 // - KARTEN -----------------------
 
@@ -115,6 +135,20 @@
       font-weigth: $font-weight-expired;
       font-size: $font-size-small;
       line-height: 20px;
+      margin-top:0;
+
+      @keyframes exp-datePos {
+        from {
+          margin-top: 0px;
+        }
+        to {
+          margin-top: 70px;
+        }
+      }
+      &.active {
+        margin-top: 70px;
+        animation: exp-datePos 1s ease-in-out;
+      }
       .datum {
         margin-left: 20px;
       }
@@ -128,6 +162,11 @@
     }
     &:last-child {
       margin-bottom: 67px;
+    }
+    .beschreibung {
+      font-size: $font-size-text;
+      font-weight: $font-weight-text;
+      margin-left: 25px;
     }
 
     // animation stuff
@@ -144,5 +183,17 @@
       height: 600px;
       animation: karte-open 1s;
     }
+  }
+  @keyframes kartenPos {
+    from {
+      padding-top: 78px;
+    }
+    to {
+      padding-top: 20px;
+    }
+  }
+  &.active {
+    padding-top: 20px;
+    animation: kartenPos 1s ease-in-out;
   }
 }

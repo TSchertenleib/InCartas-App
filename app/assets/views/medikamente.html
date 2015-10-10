@@ -1,5 +1,6 @@
+<img class="vorlage" src="images/vorlage.png">
 
-<header class="header-medikamente">
+<header class="header-medikamente" ng-controller="medikamenteController" ng-click="toggleMed()" ng-class="medClass">
 	<h1>Medikamente</h1>
 </header>
 
@@ -7,12 +8,13 @@
 	<div class="karte" ng-repeat="med in meds" ng-controller="medikamenteController" ng-click="toggleMed()" ng-class="medClass">
 		<div class="karte-{{med.typ}}">
 			<div class="tagBar" ng-class="medClass"></div>
-			<img class="medi" ng-src="{{med.bild}}">
-			<h2 class="name">{{med.name}}</h2>
-			<p class="tag">{{med.tag}}</p>
-			<img class="exp-icon" ng-src="{{med.icon}}" src="">
-			<p class="expired">{{med.expab}}</p>
-			<p class="exp-date">{{med.exp}}<span class="datum">{{med.datum}}</span></p>
+			<img class="medi" ng-src="{{med.bild}}" ng-class="medClass">
+			<h2 class="name" ng-class="medClass">{{med.name}}</h2>
+			<p class="tag" ng-class="medClass">{{med.tag}}</p>
+			<img class="exp-icon" ng-src="{{med.icon}}" ng-class="medClass">
+			<p class="expired" ng-class="medClass">{{med.expab}}</p>
+			<p class="exp-date" ng-class="medClass">{{med.exp}}<span class="datum">{{med.datum}}</span></p>
+			<p class="beschreibung" ng-class="medClass">{{med.beschreibung}}</p>
 		</div>
 	</div>
 </div>

@@ -24,6 +24,7 @@ app.value('meds', [
     datum: '22.07.2017',
     icon: 'images/icons/ablaufdatum-green.png',
     bild: 'images/meds/aspirin.jpg',
+    beschreibung: 'ASPIRIN enthält Acetylsalicsäure. Dieser hat schmerzstillende, fiebersenkende und entzündungshemmende Wirkung.'
   }, 
   { 
     typ: 'gruen',
@@ -82,7 +83,6 @@ function widgetsController($scope, $route) {
 require('controllers/karten')(app);
 require('controllers/medikamente')(app);
 require('controllers/profil')(app);
-
 
 
 
