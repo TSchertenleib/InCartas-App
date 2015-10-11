@@ -48286,7 +48286,7 @@ function widgetsController($scope, $route) {
 require('controllers/karten')(app);
 require('controllers/medikamente')(app);
 require('controllers/profil')(app);
-
+require('controllers/mediHeaderController')(app);
 
 
 
@@ -48321,10 +48321,24 @@ module.exports = function(app){
 };
 });
 
+require.register("controllers/mediHeaderController", function(exports, require, module) {
+
+module.exports = function(app){
+  app.controller('mediHeaderController', ['$scope', 'medClass' , function($scope, $rootScope, $element) {
+ 
+  	$scope.medClass=medClass;
+
+  }]);
+};
+
+
+});
+
 require.register("controllers/medikamente", function(exports, require, module) {
 module.exports = function(app){
-  app.controller('medikamenteController', ['$scope','$rootScope', '$element', function($scope, $element) {
-    $scope.medClass = ''
+  app.controller('medikamenteController', ['$scope','$rootScope', '$element', function($scope, $rootScope,  $element) {
+   
+   var bewegung = $scope.medClass = ''
 
     $scope.toggleMed = function(){
       if($scope.medClass == '') {
