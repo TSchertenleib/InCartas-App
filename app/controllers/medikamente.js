@@ -1,5 +1,5 @@
 module.exports = function(app){
-  app.controller('medikamenteController', ['$scope', '$element', function($scope, $element) {
+  app.controller('medikamenteController', ['$scope','$rootScope', '$element', function($scope, $element) {
     $scope.medClass = ''
 
     $scope.toggleMed = function(){
@@ -9,6 +9,9 @@ module.exports = function(app){
         $scope.medClass = '';
       }
     }
+
+
+    
   }]);
 };
 
