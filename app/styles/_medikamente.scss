@@ -68,6 +68,19 @@
     float: left;
     width: 94px;
     margin: 24px 26px;
+    top: 0px;
+    @keyframes mediUp {
+      from {
+        top: 0px;
+      }
+      to {
+        top: 60px;
+      }
+    }
+    &.active {
+      top: 60px;
+      animation: mediUp 1s;
+    }
   }
   .exp-icon {
     margin-right: 5px;
@@ -117,11 +130,31 @@
       }
     }
     .name {
-      margin-left: 140px;
+      margin-left: 0px;
       padding-top: 15px;
       margin-bottom: 0;
       margin-top: 10px;
+      opacity: 1;
       font-size: $karten-titel-size;
+      @keyframes nameLeft {
+        0% {
+          opacity: 1;
+        }
+        20% {
+          opacity: 0;
+        }
+        80% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      &.active {
+        position: absolute;
+        margin-left: 40px;
+        animation: nameLeft 1s;
+      }
     }
     .tag {
       margin-left: 140px;
@@ -136,18 +169,26 @@
       font-weigth: $font-weight-expired;
       font-size: $font-size-small;
       line-height: 20px;
+      opacity: 1;
       margin-top:0;
 
       @keyframes exp-datePos {
-        from {
-          margin-top: 0px;
+        0% {
+          opacity: 1;
         }
-        to {
-          margin-top: 70px;
+        20% {
+          opacity: 0;
+        }
+        80% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
         }
       }
       &.active {
-        margin-top: 70px;
+        position: absolute;
+        margin-top: 242px;
         animation: exp-datePos 1s ease-in-out;
       }
       .datum {
@@ -168,7 +209,25 @@
       font-size: $font-size-text;
       font-weight: $font-weight-text;
       margin-left: 25px;
+      float: left;
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      @keyframes beschreibung-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      &.active {
+        top: 187px;
+        opacity: 1;
+        animation: beschreibung-in 1.7s;
+      }
     }
+
 
     // animation stuff
 

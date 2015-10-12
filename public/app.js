@@ -48286,7 +48286,7 @@ function widgetsController($scope, $route) {
 require('controllers/karten')(app);
 require('controllers/medikamente')(app);
 require('controllers/profil')(app);
-require('controllers/mediHeaderController')(app);
+// require('controllers/mediHeaderController')(app);
 
 
 
