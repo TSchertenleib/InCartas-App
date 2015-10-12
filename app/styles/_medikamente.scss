@@ -157,13 +157,15 @@
       font-size: $karten-titel-size;
       @keyframes nameLeft {
         0% {
-          opacity: 1;
-        }
-        20% {
           opacity: 0;
         }
-        80% {
+        1% {
           opacity: 0;
+          margin-left: 140px;
+        }
+        90% {
+          opacity: 0;
+          margin-left: 0px;
         }
         100% {
           opacity: 1;
@@ -172,7 +174,7 @@
       &.active {
         position: absolute;
         margin-left: 40px;
-        animation: nameLeft 1s;
+        animation: nameLeft 2s;
       }
     }
     .tag {
@@ -187,10 +189,10 @@
           opacity: 1;
         }
         20% {
-          opacity: 0;
+          opacity: 1;
         }
-        80% {
-          opacity: 0;
+        90% {
+          opacity: 1;
         }
         100% {
           opacity: 1;
@@ -250,7 +252,7 @@
       margin-bottom: 67px;
     }
     .beschreibung {
-      font-size: $font-size-text;
+      font-size: 15px;
       font-weight: $font-weight-text;
       margin-left: 25px;
       margin-right: 20px;
@@ -267,13 +269,19 @@
         }
       }
       &.active {
+        width: 82%;
         top: 187px;
         opacity: 1;
         animation: beschreibung-in 1.7s;
       }
     }
-
-
+    hr {
+      position: absolute;
+      display: none;
+    }
+    &.active {
+      display: block;
+    }
     // animation stuff
 
     @keyframes karte-open {
@@ -302,3 +310,5 @@
     animation: kartenPos 1s ease-in-out;
   }
 }
+
+
