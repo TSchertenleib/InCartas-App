@@ -86,9 +86,29 @@
     margin-right: 5px;
     float: left;
     width: 19px;
+    @keyframes exp-iconPos {
+      0% {
+        opacity: 1;
+      }
+      10% {
+        opacity: 0;
+      }
+      70% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    &.active {
+      clear: both;
+      position: relative;
+      top: 170px;
+      margin-left: 26px;
+      animation: exp-iconPos 1s ease-in-out;
+    }
   }
   .karte {
-
     width: 97%;
     height: 117px;
     background: $card-background;
@@ -207,10 +227,12 @@
         }
       }
       &.active {
+        font-weight: 300;
         clear: both;
         position: relative;
-        top: 200px;
-        margin-left: 26px;
+        top: 150px;
+        left: 50px;
+        margin-left: 0px;
         animation: exp-datePos 1s ease-in-out;
       }
       .datum {
