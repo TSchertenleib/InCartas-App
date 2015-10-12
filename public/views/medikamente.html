@@ -1,11 +1,11 @@
 <img class="vorlage" src="images/vorlage.png">
 
-<header class="header-medikamente" ng-class="$root.bewegung">
+<header class="header-medikamente" ng-class="medClass">
 	<h1>Medikamente</h1>
 </header>
 
-<div class="karten" ng-controller="kartenController">
-	<div class="karte" ng-repeat="med in meds" ng-controller="medikamenteController" ng-click="toggleMed()" ng-class="medClass">
+<div class="karten" ng-controller="kartenController" ng-class="medClass">
+	<div class="karte" ng-repeat="med in meds" ng-click="toggleMed()" ng-class="medClass">
 		<div class="karte-{{med.typ}}">
 			<div class="tagBar" ng-class="medClass"></div>
 			<img class="medi" ng-src="{{med.bild}}" ng-class="medClass">
