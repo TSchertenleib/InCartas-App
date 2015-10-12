@@ -79,7 +79,7 @@
     }
     &.active {
       top: 60px;
-      animation: mediUp 1s;
+      animation: mediUp 1.5s;
     }
   }
   .exp-icon {
@@ -98,7 +98,6 @@
       height: 117px;
       width: 2%;
       opacity: 1;
-
       @keyframes fadeOutUp {
         from {
           opacity: 1;
@@ -185,22 +184,22 @@
       }
     }
     .exp-date {
-      margin-left: 165px;
+      margin-left: 0px;
       font-family: $karten-font-family;
       font-weigth: $font-weight-expired;
       font-size: $font-size-small;
       line-height: 20px;
       opacity: 1;
-      margin-top:0;
+      top:0;
 
       @keyframes exp-datePos {
         0% {
           opacity: 1;
         }
-        20% {
+        10% {
           opacity: 0;
         }
-        80% {
+        70% {
           opacity: 0;
         }
         100% {
@@ -208,8 +207,10 @@
         }
       }
       &.active {
-        position: absolute;
-        margin-top: 242px;
+        clear: both;
+        position: relative;
+        top: 200px;
+        margin-left: 26px;
         animation: exp-datePos 1s ease-in-out;
       }
       .datum {
@@ -230,6 +231,7 @@
       font-size: $font-size-text;
       font-weight: $font-weight-text;
       margin-left: 25px;
+      margin-right: 20px;
       float: left;
       position: absolute;
       opacity: 0;
